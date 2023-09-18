@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="index.css" />
   </head>
   <body>
     <div>
@@ -22,24 +23,6 @@
       crossorigin
       src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
     ></script>
-
-    <script>
-      const heading = React.createElement("h1", { key: 1 }, "Hello React H1!");
-
-      const heading2 = React.createElement(
-        "h2",
-        { id: "heading-two", key: 2 },
-        "Hello React H2!"
-      );
-      const container = React.createElement("div", { id: "container" }, [
-        heading,
-        heading2,
-      ]);
-
-      const root = ReactDOM.createRoot(document.getElementById("root"));
-
-      console.log(container);
-      root.render(container);
-    </script>
+    <script src="index.js"></script>
   </body>
 </html>
