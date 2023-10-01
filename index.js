@@ -467,16 +467,11 @@ let dataObject = [
 function RestauRantList() {
     return (
         <div className="restaurant-list">
-            <RestaurantCard data={dataObject[0].info} />
-            {/* <RestaurantCard data={dataObject[1].info} />
-            <RestaurantCard data={dataObject[2].info} />
-            <RestaurantCard data={dataObject[3].info} />
-            <RestaurantCard data={dataObject[4].info} />
-            <RestaurantCard data={dataObject[5].info} />
-            <RestaurantCard data={dataObject[6].info} />
-            <RestaurantCard data={dataObject[7].info} />
-            <RestaurantCard data={dataObject[8].info} />
-            <RestaurantCard data={dataObject[9].info} /> */}
+            {
+                dataObject.map((item, index) => (
+                    <RestaurantCard data={dataObject[index].info} key={dataObject[index].info.resId} />
+                ))
+            }
         </div>
     )
 
