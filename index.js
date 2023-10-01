@@ -12,7 +12,7 @@ const Fun = ()=>{
 //Component composition
 function Main(){
     return <div>
-        {span}
+        {console.log("Hey i am normal JS code")}
         <Fun/>
         <i>I am another react element.</i>
     </div>
