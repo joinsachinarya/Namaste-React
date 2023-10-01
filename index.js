@@ -64,13 +64,14 @@ function RestauRantList() {
 
 
 function RestaurantCard(props) {
+    const { data } = props;
     return (
         <div className="restaurant-card">
             {console.log(props)}
-            <img alt={props.data[0].name} src={props.data[0].img} />
-            <h2>{props.data[0].name}</h2>
-            <h3>{props.data[0].cuisines}</h3>
-            <h4>{props.data[0].rating} Stars</h4>
+            <img alt={data[0].name} src={data[0].img} />
+            <h2>{data[0].name}</h2>
+            <h3>{data[0].cuisines}</h3>
+            <h4>{data[0].rating} Stars</h4>
         </div>
     )
 }
