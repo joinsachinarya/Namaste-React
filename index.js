@@ -1,7 +1,8 @@
 import React from "react";
 import  ReactDOM  from "react-dom/client";
 
-const div = React.createElement("div", {id:"id"}, [React.createElement("h1", {key:"1"}, "Heading 1"), React.createElement("h1", {key:"2"}, "Heading 1"),React.createElement("h1", {key:"3"}, "Heading 1")])
+//JSX
+const  div = (<div><h1>Heading</h1><h1>Heading2</h1></div>)
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
