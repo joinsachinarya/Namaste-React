@@ -24,6 +24,22 @@ body{
     padding-left: 1rem;
 }
 
+.restaurant-card{
+    width: 200px;
+    border: 1px solid black;
+    margin: 1rem 1rem 1rem 0;
+    text-align: center;
+
+}
+
+.restaurant-card > img{
+    width: 100%;
+}
+
+.restaurant-list{
+    display: flex;
+    flex-wrap: wrap;
+}
 
 .footer{
     opacity: 0.5;

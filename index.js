@@ -23,19 +23,31 @@ function Body() {
 
 function RestauRantList() {
     return (
-        <>
+        <div className="restaurant-list">
             <RestaurantCard />
             <RestaurantCard />
             <RestaurantCard />
             <RestaurantCard />
-        </>
+            <RestaurantCard />
+            <RestaurantCard />
+            <RestaurantCard />
+            <RestaurantCard />
+            <RestaurantCard />
+            <RestaurantCard />
+            <RestaurantCard />
+            <RestaurantCard />
+            <RestaurantCard />
+            <RestaurantCard />
+            <RestaurantCard />
+            <RestaurantCard />
+        </div>
     )
 
 }
 
 function RestaurantCard() {
     return (
-        <div className="restaurant-list">
+        <div className="restaurant-card">
             <img alt="restaurant1" src="https://imgs.search.brave.com/9AaTexAytkBQcFjWyVH7-4efsNFZ4b0wkD3CQxDa4k8/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvNTU2/NTYxOTY1L3Bob3Rv/L3dvbWFuLWhhdmlu/Zy1mb29kLWF0LXJl/c3RhdXJhbnQtdGFi/bGUuanBnP3M9NjEy/eDYxMiZ3PTAmaz0y/MCZjPW1UdDNuUzVE/M0t0XzNaMzROMHVi/LU1qOXg0Q2xva0R0/U2JKcXhQNndWZUE9" />
             <h2>Restaurant 1</h2>
             <h3>Indian, Italian</h3>
