@@ -45,6 +45,22 @@ function RestauRantList() {
 
 }
 
+
+
+
+
+let dataObj = [
+    {
+        img: "",
+        name: "",
+        cuisines: [],
+        rating: ""
+    }
+]
+
+
+
+
 function RestaurantCard() {
     return (
         <div className="restaurant-card">
