@@ -7,7 +7,6 @@ function SearchBar() {
     function handleSearchTextValue(e) {
         text = e.target.value
         setSearchText(text);
-        console.log(searchText);
     }
 
     function filterCard() {

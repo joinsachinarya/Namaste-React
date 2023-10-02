@@ -9,7 +9,6 @@ function RestauRantList() {
     const [filteredData, setFilteredData] = useState(dataObject)
     function handleSearchTextValue(e) {
         setSearchText(e.target.value);
-        console.log(searchText);
     }
 
     function filterCard(text, data) {
