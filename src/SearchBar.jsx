@@ -1,8 +1,6 @@
 import { useState } from "react";
 import { dataObject } from "../constants";
 
-
-
 function SearchBar() {
     const [searchText, setSearchText] = useState("");
     function handleSearchTextValue(e) {
