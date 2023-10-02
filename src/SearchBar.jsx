@@ -11,7 +11,7 @@ function SearchBar() {
     }
     return (
         <div className="search-bar">
-            <input type="text" placeholder="Search..." value={searchText} onChange={() => handleSearchTextValue(event)} />
+            <input type="text" placeholder="Search..." value={searchText} onChange={(event) => handleSearchTextValue(event)} />
         </div>
     )
 }
