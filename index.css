@@ -44,3 +44,9 @@ body{
 .footer{
     opacity: 0.5;
 }
+
+.recommended{
+    margin-right: -10px;
+    margin-left: -10px;
+    z-index: 2;
+}
