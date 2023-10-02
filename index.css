@@ -1,0 +1,66 @@
+body{
+    margin: 1rem;
+}
+
+.header{
+    border:  1px solid black;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.logo{
+    width: 100px;
+}
+.logo > img{
+    width: 100%;
+}
+
+.header > ul{
+    list-style: none;
+    display: flex;
+}
+.header > ul > li{
+    padding-left: 1rem;
+}
+
+.restaurant-card{
+    width: 200px;
+    border: 1px solid black;
+    margin: 1rem 1rem 1rem 0;
+    text-align: center;
+
+}
+
+.restaurant-card > img{
+    width: 100%;
+}
+
+.restaurant-list{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer{
+    opacity: 0.5;
+}
+
+.recommended{
+    /* margin-right: -10px;
+    margin-left: -10px; */
+    z-index: 2;
+}
+.search-bar{
+    margin-top: 1rem;
+    text-align: center
+}
+.search-bar >input{
+    width: 100%;
+    height: 30px;
+    text-align: center;
+}
+.button{
+    width:100px;
+    height: 50px;
+    margin-top: 1rem;
+}
