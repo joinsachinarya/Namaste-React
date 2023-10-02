@@ -1,5 +1,9 @@
 import RestauRantList from "./RestaurantList";
+import SearchBar from "./SearchBar";
 function Body() {
-    return <RestauRantList />
+    return <div>
+        <SearchBar />
+        <RestauRantList />
+    </div>
 }
 export default Body;

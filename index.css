@@ -50,3 +50,12 @@ body{
     margin-left: -10px;
     z-index: 2;
 }
+.search-bar{
+    margin-top: 1rem;
+    text-align: center
+}
+.search-bar >input{
+    width: 100%;
+    height: 30px;
+    text-align: center;
+}
