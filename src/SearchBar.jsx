@@ -1,13 +1,17 @@
-function handleSearchTextValue(e, text) {
-    text = e.target.value
-    console.log(text);
-}
+import { useState } from "react";
+
+
 
 function SearchBar() {
-    let searchText = "Text"
+    const [searchText, setSearchText] = useState("");
+    function handleSearchTextValue(e) {
+        text = e.target.value
+        setSearchText(text);
+        console.log(searchText);
+    }
     return (
         <div className="search-bar">
-            <input type="text" placeholder="Search..." value={searchText} onChange={() => handleSearchTextValue(event, searchText)} />
+            <input type="text" placeholder="Search..." value={searchText} onChange={() => handleSearchTextValue(event)} />
         </div>
     )
 }
