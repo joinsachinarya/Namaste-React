@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { dataObject } from "../constants";
 
+//This component is not used yet
 function SearchBar() {
     const [searchText, setSearchText] = useState("");
     function handleSearchTextValue(e) {
@@ -16,7 +17,7 @@ function SearchBar() {
     return (
         <div className="search-bar">
             <input type="text" placeholder="Search..." value={searchText} onChange={(event) => handleSearchTextValue(event)} />
-            <button onClick={filterCard}>Search</button>
+            <button onInput={filterCard} className="button">Search</button>
         </div>
     )
 }

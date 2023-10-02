@@ -1,11 +1,10 @@
-export function RestaurantCard(props) {
-    const { data, key } = props;
+export function RestaurantCard({ name, image, cuisine, locality }) {
     return (
         <>
-            <img alt={data.name} src={data.image.url} />
-            <h2>{data.name}</h2>
-            <h3>{[data.cuisine[0].name, data.cuisine[1].name].join(", ")}</h3>
-            <h4>{data.locality.name}</h4>
+            <img alt={name} src={image.url} />
+            <h2>{name}</h2>
+            <h3>{[cuisine[0].name, cuisine[1].name].join(", ")}</h3>
+            <h4>{locality.name}</h4>
         </>
     )
 }

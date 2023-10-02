@@ -20,14 +20,14 @@ function RestauRantList() {
     return (
         <>
             <div className="search-bar">
-                <input type="text" placeholder="Search..." value={searchText} onChange={(event) => handleSearchTextValue(event)} />
-                <button onClick={() => filterCard(searchText, dataObject)}>Search</button>
-            </div>
+                <input type="text" placeholder="Search..." value={searchText} onChange={(event) => handleSearchTextValue(event)} onInput={() => filterCard(searchText, dataObject)} />
+                <button onClick={() => filterCard(searchText, dataObject)} className="button">Search</button>
+            </div >
 
             <div className="restaurant-list">
                 {filteredData.map((item, index) => (
                     <div className="restaurant-card" key={filteredData[index].info.name}>
-                        <Restaurant.RestaurantCard data={filteredData[index].info} />
+                        <Restaurant.RestaurantCard {...filteredData[index].info} />
                         {parseInt(filteredData[index].info.rating.votes) > 1 && <Restaurant.Recommended />}
                     </div>
                 ))}
