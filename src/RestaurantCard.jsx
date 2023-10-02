@@ -1,5 +1,5 @@
 export function RestaurantCard(props) {
-    const { data } = props;
+    const { data, key } = props;
     return (
         <div className="restaurant-card">
             {console.log(data)}

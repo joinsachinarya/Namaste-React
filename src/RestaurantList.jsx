@@ -28,16 +28,16 @@ function RestauRantList() {
             }
 
             {dataObject.map((item, index) => (
-                <>
-                    {parseInt(dataObject[index].info.rating.votes) > 1 && <Restaurant.Recommended data={dataObject[index].info.image} />}
-                    <Restaurant.RestaurantCard data={dataObject[index].info} key={dataObject[index].info.resId} />
-                </>
+                <div key={dataObject[index].info.resId} style={{ display: "flex" }}>
+                    {parseInt(dataObject[index].info.rating.votes) > 1 && <Restaurant.Recommended />}
+                    <Restaurant.RestaurantCard data={dataObject[index].info} />
+                </div>
             ))}
             {dataObject.map((item, index) => (
-                <>
-                    {parseInt(dataObject[index].info.rating.votes) > 1 && <Restaurant.Recommended data={dataObject[index].info.image} />}
-                    <Restaurant.RestaurantCard data={dataObject[index].info} key={dataObject[index].info.resId} />
-                </>
+                <div key={dataObject[index].info.resId} style={{ display: "flex" }} >
+                    {parseInt(dataObject[index].info.rating.votes) > 1 && <Restaurant.Recommended />}
+                    <Restaurant.RestaurantCard data={dataObject[index].info} />
+                </div>
             ))}
         </div>
     )
