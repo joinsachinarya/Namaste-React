@@ -1,15 +1,20 @@
+import { useState } from "react";
+import { logo } from "../constants"
+
 function Header() {
+    const [isLoggedIn, setIsLoggedIn] = useState(false);
     return (
         <div className="header">
             <a href="/" className="logo">
-                <img alt="logo" src="https://imgs.search.brave.com/F_CYamxHqVTQRWPNwX_Uy7OZCHnKI5rMvGUHLK7t940/rs:fit:500:0:0/g:ce/aHR0cHM6Ly92aWxs/YWVzY29uZGlkYXNl/YXR0bGUuY29tL3dw/LWNvbnRlbnQvdXBs/b2Fkcy8yMDE5LzA0/L3ZpbGxhLXNsaWRl/ci05LmpwZw" />
+                <img alt="logo" src={logo.src} />
             </a>
             <ul>
+                <li>Home</li>
                 <li>About</li>
-                <li>Service</li>
                 <li>Contact</li>
                 <li>Cart</li>
             </ul>
+            {isLoggedIn ? <button onClick={() => setIsLoggedIn(false)} style={{ width: "100px" }}>Logout</button> : <button onClick={() => setIsLoggedIn(true)} style={{ width: "100px" }}>Login</button>}
         </div>
     )
 }

@@ -6,13 +6,15 @@ import * as Restaurant from "./RestaurantCard";
 
 function RestauRantList() {
     const [searchText, setSearchText] = useState("");
-    const [configData, setConfigData] = useState(dataObject)
+    const [configData, setConfigData] = useState(dataObject);
+    const [filteredData, setFilteredData] = useState(dataObject);
+
     function handleSearchTextValue(e) {
         setSearchText(e.target.value);
     }
 
     function filterCard(text, data) {
-        const filteredData = data.filter((item) => item.info.name.includes(text));
+        const filteredData = data.filter((item) => item?.info?.name?.toLowerCase().includes(text.toLowerCase()));
         setConfigData(filteredData);
     }
 
