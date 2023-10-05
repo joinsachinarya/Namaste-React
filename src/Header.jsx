@@ -10,10 +10,10 @@ function Header() {
                 <img alt="logo" src={logo.src} />
             </Link>
             <ul>
-                {/* <Link to="/">  <li>Home</li></Link>
+                <Link to="/">  <li>Home</li></Link>
                 <Link to="/about"> <li>About</li> </Link>
                 <Link to="/contact"><li>Contact</li></Link>
-                <li>Cart</li> */}
+                <li>Cart</li>
             </ul>
             {isLoggedIn ? <button onClick={() => setIsLoggedIn(false)} style={{ width: "100px" }}>Logout</button> : <button onClick={() => setIsLoggedIn(true)} style={{ width: "100px" }}>Login</button>}
         </div>

@@ -25,10 +25,10 @@ body{
     list-style: none;
     display: flex;
     align-items: center;
+    gap: 16px;
 }
-.header > ul > li{
-    padding-left: 1rem;
-    padding-right: 1rem;
+.header > ul > a{
+    text-decoration: none;
 }
 
 .restaurant-card{

@@ -1,11 +1,12 @@
 import Header from "./src/Header";
-import Body from "./src/Body";
 import Footer from "./src/Footer";
+import { Outlet } from "react-router-dom";
+import Body from "./src/Body";
 function App() {
     return (
         <>
             <Header />
-            <Body />
+            <Outlet />
             <Footer />
         </>
     )
