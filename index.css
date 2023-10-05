@@ -36,7 +36,6 @@ body{
     border: 1px solid black;
     margin: 1rem 1rem 1rem 0;
     text-align: center;
-
 }
 
 .restaurant-card > img{
@@ -70,4 +69,9 @@ body{
 .button{
     width:60px;
     margin-left: 1rem;
+}
+.shimmer{
+    width: 200px;
+    height: 175px;
+    background-color: aliceblue;
 }

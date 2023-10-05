@@ -1,440 +1,986 @@
 export const logo = { src: "https://imgs.search.brave.com/zRPCb1h2JzO3Zrokfar8lbxsxv2Ns0Fd9Mor6zklk7w/rs:fit:200:200:1/g:ce/aHR0cHM6Ly9tZW51/Znlwcm9kdWN0aW9u/LmltZ2l4Lm5ldC82/MzgyMDcyNzc2NjYx/NzE2NTYrMTEzNjEz/Ny5wbmc_YXV0bz1j/b21wcmVzcyxmb3Jt/YXQmYW1wO2g9MTA4/MCZhbXA7dz0xOTIw/JmFtcDtmaXQ9bWF4" }
+export const CDN_IMG_URL = "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/"
 export const dataObject = [
     {
-        "type": "restaurant",
         "info": {
-            "resId": 20497454,
-            "name": "Mashaallah Chicken Corner",
-            "image": {
-                "url": "https:\/\/b.zmtcdn.com\/data\/pictures\/4\/20497454\/7348cf35be9b2fb33c23685c58f74465_o2_featured_v2.jpg"
-            },
-            "o2FeaturedImage": {
-                "url": "https:\/\/b.zmtcdn.com\/data\/pictures\/4\/20497454\/7348cf35be9b2fb33c23685c58f74465_o2_featured_v2.jpg"
-            },
-            "rating": {
-                "has_fake_reviews": 0,
-                "aggregate_rating": "3.9",
-                "rating_text": "3.9",
-                "rating_subtitle": "Good",
-                "rating_color": "9ACD32",
-                "votes": "1,299",
-                "subtext": "REVIEW",
-                "is_new": false
-            },
-            "ratingNew": {
-                "newlyOpenedObj": null,
-                "suspiciousReviewObj": null,
-                "ratings": {
-                    "DINING": {
-                        "rating_type": "DINING",
-                        "rating": "3.6",
-                        "reviewCount": "13",
-                        "reviewTextSmall": "13 Reviews",
-                        "subtext": "13 Dining Reviews",
-                        "color": "#1C1C1C",
-                        "ratingV2": "3.6",
-                        "subtitle": "DINING",
-                        "sideSubTitle": "Dining Reviews",
-                        "bgColorV2": {
-                            "type": "green",
-                            "tint": "600"
-                        }
+            "id": "573374",
+            "name": "Burger King",
+            "cloudinaryImageId": "e33e1d3ba7d6b2bb0d45e1001b731fcf",
+            "locality": "Govindpuri",
+            "areaName": "Ranipur",
+            "costForTwo": "₹350 for two",
+            "cuisines": [
+                "Burgers",
+                "American"
+            ],
+            "avgRating": 4.3,
+            "veg": true,
+            "feeDetails": {
+                "restaurantId": "573374",
+                "fees": [
+                    {
+                        "name": "BASE_DISTANCE",
+                        "fee": 3100
                     },
-                    "DELIVERY": {
-                        "rating_type": "DELIVERY",
-                        "rating": "4.1",
-                        "reviewCount": "1,286",
-                        "reviewTextSmall": "1,286 Reviews",
-                        "subtext": "1,286 Delivery Reviews",
-                        "color": "#E23744",
-                        "ratingV2": "4.1",
-                        "subtitle": "DELIVERY",
-                        "sideSubTitle": "Delivery Reviews",
-                        "bgColorV2": {
-                            "type": "green",
-                            "tint": "700"
-                        },
-                        "newOnDelivery": false
+                    {
+                        "name": "BASE_TIME"
+                    },
+                    {
+                        "name": "ANCILLARY_SURGE_FEE"
+                    }
+                ],
+                "totalFee": 3100
+            },
+            "parentId": "166",
+            "avgRatingString": "4.3",
+            "totalRatingsString": "1K+",
+            "sla": {
+                "deliveryTime": 30,
+                "lastMileTravel": 8.5,
+                "serviceability": "SERVICEABLE",
+                "slaString": "30 mins",
+                "lastMileTravelString": "8.5 km",
+                "iconType": "ICON_TYPE_EMPTY"
+            },
+            "availability": {
+                "nextCloseTime": "2023-10-05 23:59:00",
+                "opened": true
+            },
+            "badges": {
+
+            },
+            "isOpen": true,
+            "type": "F",
+            "badgesV2": {
+                "entityBadges": {
+                    "imageBased": {
+
+                    },
+                    "textBased": {
+
+                    },
+                    "textExtendedBadges": {
+
                     }
                 }
             },
-            "cft": {
-                "text": "\u20b9400 for two"
+            "aggregatedDiscountInfoV3": {
+                "header": "60% OFF",
+                "subHeader": "UPTO ₹120"
             },
-            "cfo": {
-                "text": "\u20b9150 for one"
+            "loyaltyDiscoverPresentationInfo": {
+                "badgeType": "BADGE_TYPE_OFFER_PACK",
+                "offerSubText": "with offer pack",
+                "nonSwiggyOneFreedelMessage": "FREE DELIVERY"
             },
-            "locality": {
-                "name": "Paharganj, New Delhi",
-                "address": "Shop 114, Amrit Kaur Market, Paharganj, New Delhi",
-                "localityUrl": "ncr\/paharganj-delhi-restaurants"
-            },
-            "timing": {
-                "text": "",
-                "color": ""
-            },
-            "cuisine": [
-                {
-                    "deeplink": "zomato:\/\/search?deeplink_filters=WyJ7XCJjb250ZXh0XCI6XCJhbGxcIn0iLCJ7XCJjdWlzaW5lX2lkXCI6W1wiNTBcIl19Il0%3D",
-                    "url": "https:\/\/www.zomato.com\/ncr\/restaurants\/north-indian\/",
-                    "name": "North Indian"
-                },
-                {
-                    "deeplink": "zomato:\/\/search?deeplink_filters=WyJ7XCJjb250ZXh0XCI6XCJhbGxcIn0iLCJ7XCJjdWlzaW5lX2lkXCI6W1wiN1wiXX0iXQ%3D%3D",
-                    "url": "https:\/\/www.zomato.com\/ncr\/restaurants\/biryani\/",
-                    "name": "Biryani"
+            "differentiatedUi": {
+                "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                "differentiatedUiMediaDetails": {
+                    "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+                    "lottie": {
+
+                    },
+                    "video": {
+
+                    }
                 }
-            ],
-            "should_ban_ugc": false,
-            "costText": {
-                "text": "\u20b9150 for one"
+            },
+            "reviewsSummary": {
+
+            },
+            "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+            "restaurantOfferPresentationInfo": {
+
             }
         },
-        "order": {
-            "deliveryTime": "25 min",
-            "isServiceable": true,
-            "hasOnlineOrdering": true,
-            "actionInfo": {
-                "text": "Order Now",
-                "clickUrl": "\/ncr\/mashaallah-chicken-corner-1-paharganj-new-delhi\/order"
-            }
+        "analytics": {
+
         },
-        "gold": [],
-        "takeaway": [],
-        "cardAction": {
-            "text": "",
-            "clickUrl": "\/ncr\/mashaallah-chicken-corner-1-paharganj-new-delhi\/order",
-            "clickActionDeeplink": ""
-        },
-        "distance": "2 km",
-        "isPromoted": false,
-        "promotedText": "",
-        "trackingData": [
-            {
-                "table_name": "zsearch_events_log",
-                "payload": "{\"search_id\":\"02b37e8c-010a-42b7-81a1-4549213a9c49\",\"location_type\":\"delivery_cell\",\"location_id\":\"4110939063815503872\",\"page_type\":\"delivery\",\"app_type\":\"new_web_consumer\",\"section\":\"restaurants\",\"entity_type\":\"restaurant\",\"entity_id\":\"20497454\",\"element_type\":\"listing\",\"rank\":1}",
-                "event_names": {
-                    "tap": "{\"action\":\"tap\"}",
-                    "impression": "{\"action\":\"impression\"}"
-                }
-            }
-        ],
-        "allCTA": [],
-        "promoOffer": "",
-        "checkBulkOffers": true,
-        "bulkOffers": [
-            {
-                "text": "20% OFF",
-                "color": {
-                    "tint": "500",
-                    "type": "blue"
-                }
-            }
-        ],
-        "isDisabled": false,
-        "bottomContainers": []
+        "cta": {
+            "link": "https://www.swiggy.com/restaurants/burger-king-govindpuri-ranipur-haridwar-573374",
+            "type": "WEBLINK"
+        }
     },
     {
-        "type": "restaurant",
         "info": {
-            "resId": 20462635,
-            "name": "La Pino'z Pizza",
-            "image": {
-                "url": "https:\/\/b.zmtcdn.com\/data\/pictures\/chains\/7\/18619067\/54b6de34323395a3b10897e48bd2a6e5_o2_featured_v2.jpg"
-            },
-            "o2FeaturedImage": {
-                "url": "https:\/\/b.zmtcdn.com\/data\/pictures\/chains\/7\/18619067\/54b6de34323395a3b10897e48bd2a6e5_o2_featured_v2.jpg"
-            },
-            "rating": {
-                "has_fake_reviews": 0,
-                "aggregate_rating": "4.1",
-                "rating_text": "4.1",
-                "rating_subtitle": "Very Good",
-                "rating_color": "5BA829",
-                "votes": "3,787",
-                "subtext": "REVIEWS",
-                "is_new": false
-            },
-            "ratingNew": {
-                "newlyOpenedObj": null,
-                "suspiciousReviewObj": null,
-                "ratings": {
-                    "DINING": {
-                        "rating_type": "DINING",
-                        "rating": "4.2",
-                        "reviewCount": "149",
-                        "reviewTextSmall": "149 Reviews",
-                        "subtext": "149 Dining Reviews",
-                        "color": "#1C1C1C",
-                        "ratingV2": "4.2",
-                        "subtitle": "DINING",
-                        "sideSubTitle": "Dining Reviews",
-                        "bgColorV2": {
-                            "type": "green",
-                            "tint": "700"
-                        }
+            "id": "544740",
+            "name": "Pizza Hut",
+            "cloudinaryImageId": "2b4f62d606d1b2bfba9ba9e5386fabb7",
+            "locality": "Mitra Vatika",
+            "areaName": "Devpura",
+            "costForTwo": "₹350 for two",
+            "cuisines": [
+                "Pizzas"
+            ],
+            "avgRating": 3.7,
+            "veg": true,
+            "feeDetails": {
+                "restaurantId": "544740",
+                "fees": [
+                    {
+                        "name": "BASE_DISTANCE",
+                        "fee": 3300
                     },
-                    "DELIVERY": {
-                        "rating_type": "DELIVERY",
-                        "rating": "4.0",
-                        "reviewCount": "3,638",
-                        "reviewTextSmall": "3,638 Reviews",
-                        "subtext": "3,638 Delivery Reviews",
-                        "color": "#E23744",
-                        "ratingV2": "4.0",
-                        "subtitle": "DELIVERY",
-                        "sideSubTitle": "Delivery Reviews",
-                        "bgColorV2": {
-                            "type": "green",
-                            "tint": "700"
-                        },
-                        "newOnDelivery": false
+                    {
+                        "name": "BASE_TIME"
+                    },
+                    {
+                        "name": "ANCILLARY_SURGE_FEE"
+                    }
+                ],
+                "totalFee": 3300
+            },
+            "parentId": "721",
+            "avgRatingString": "3.7",
+            "totalRatingsString": "1K+",
+            "sla": {
+                "deliveryTime": 34,
+                "lastMileTravel": 8.7,
+                "serviceability": "SERVICEABLE",
+                "slaString": "34 mins",
+                "lastMileTravelString": "8.7 km",
+                "iconType": "ICON_TYPE_EMPTY"
+            },
+            "availability": {
+                "nextCloseTime": "2023-10-05 23:59:00",
+                "opened": true
+            },
+            "badges": {
+                "imageBadges": [
+                    {
+                        "imageId": "v1695133679/badges/Pure_Veg111.png",
+                        "description": "pureveg"
+                    }
+                ]
+            },
+            "isOpen": true,
+            "type": "F",
+            "badgesV2": {
+                "entityBadges": {
+                    "imageBased": {
+                        "badgeObject": [
+                            {
+                                "attributes": {
+                                    "description": "pureveg",
+                                    "imageId": "v1695133679/badges/Pure_Veg111.png"
+                                }
+                            }
+                        ]
+                    },
+                    "textBased": {
+
+                    },
+                    "textExtendedBadges": {
+
                     }
                 }
             },
-            "cft": {
-                "text": "\u20b9500 for two"
+            "aggregatedDiscountInfoV3": {
+                "header": "50% OFF",
+                "subHeader": "UPTO ₹100"
             },
-            "cfo": {
-                "text": "\u20b9150 for one"
+            "loyaltyDiscoverPresentationInfo": {
+                "badgeType": "BADGE_TYPE_OFFER_PACK",
+                "offerSubText": "with offer pack",
+                "nonSwiggyOneFreedelMessage": "FREE DELIVERY"
             },
-            "locality": {
-                "name": "Karol Bagh, New Delhi",
-                "address": "Shop 2, Old Rajinder Nagar Market, Karol Bagh, New Delhi",
-                "localityUrl": "ncr\/karol-bagh-delhi-restaurants"
-            },
-            "timing": {
-                "text": "",
-                "color": ""
-            },
-            "cuisine": [
-                {
-                    "deeplink": "zomato:\/\/search?deeplink_filters=WyJ7XCJjb250ZXh0XCI6XCJhbGxcIn0iLCJ7XCJjdWlzaW5lX2lkXCI6W1wiODJcIl19Il0%3D",
-                    "url": "https:\/\/www.zomato.com\/ncr\/restaurants\/pizza\/",
-                    "name": "Pizza"
-                },
-                {
-                    "deeplink": "zomato:\/\/search?deeplink_filters=WyJ7XCJjb250ZXh0XCI6XCJhbGxcIn0iLCJ7XCJjdWlzaW5lX2lkXCI6W1wiMTA2NFwiXX0iXQ%3D%3D",
-                    "url": "https:\/\/www.zomato.com\/ncr\/restaurants\/pasta\/",
-                    "name": "Pasta"
-                },
-                {
-                    "deeplink": "zomato:\/\/search?deeplink_filters=WyJ7XCJjb250ZXh0XCI6XCJhbGxcIn0iLCJ7XCJjdWlzaW5lX2lkXCI6W1wiNTVcIl19Il0%3D",
-                    "url": "https:\/\/www.zomato.com\/ncr\/restaurants\/italian\/",
-                    "name": "Italian"
-                },
-                {
-                    "deeplink": "zomato:\/\/search?deeplink_filters=WyJ7XCJjb250ZXh0XCI6XCJhbGxcIn0iLCJ7XCJjdWlzaW5lX2lkXCI6W1wiNDBcIl19Il0%3D",
-                    "url": "https:\/\/www.zomato.com\/ncr\/restaurants\/fast-food\/",
-                    "name": "Fast Food"
+            "differentiatedUi": {
+                "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                "differentiatedUiMediaDetails": {
+                    "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+                    "lottie": {
+
+                    },
+                    "video": {
+
+                    }
                 }
-            ],
-            "should_ban_ugc": false,
-            "costText": {
-                "text": "\u20b9150 for one"
+            },
+            "reviewsSummary": {
+
+            },
+            "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+            "restaurantOfferPresentationInfo": {
+
             }
         },
-        "order": {
-            "deliveryTime": "31 min",
-            "isServiceable": true,
-            "hasOnlineOrdering": true,
-            "actionInfo": {
-                "text": "Order Now",
-                "clickUrl": "\/ncr\/la-pinoz-pizza-karol-bagh-new-delhi\/order"
-            }
+        "analytics": {
+
         },
-        "gold": [],
-        "takeaway": [],
-        "cardAction": {
-            "text": "",
-            "clickUrl": "\/ncr\/la-pinoz-pizza-karol-bagh-new-delhi\/order",
-            "clickActionDeeplink": ""
-        },
-        "distance": "3 km",
-        "isPromoted": false,
-        "promotedText": "",
-        "trackingData": [
-            {
-                "table_name": "zsearch_events_log",
-                "payload": "{\"search_id\":\"02b37e8c-010a-42b7-81a1-4549213a9c49\",\"location_type\":\"delivery_cell\",\"location_id\":\"4110939063815503872\",\"page_type\":\"delivery\",\"app_type\":\"new_web_consumer\",\"section\":\"restaurants\",\"entity_type\":\"restaurant\",\"entity_id\":\"20462635\",\"element_type\":\"listing\",\"rank\":2}",
-                "event_names": {
-                    "tap": "{\"action\":\"tap\"}",
-                    "impression": "{\"action\":\"impression\"}"
-                }
-            }
-        ],
-        "allCTA": [],
-        "promoOffer": "",
-        "checkBulkOffers": true,
-        "bulkOffers": [
-            {
-                "text": "\u20b9125 OFF",
-                "color": {
-                    "tint": "500",
-                    "type": "blue"
-                }
-            }
-        ],
-        "isDisabled": false,
-        "bottomContainers": []
+        "cta": {
+            "link": "https://www.swiggy.com/restaurants/pizza-hut-mitra-vatika-devpura-haridwar-544740",
+            "type": "WEBLINK"
+        }
     },
     {
-        "type": "restaurant",
         "info": {
-            "resId": 4057,
-            "name": "Bikanervala",
-            "image": {
-                "url": "https:\/\/b.zmtcdn.com\/data\/pictures\/chains\/1\/491\/aa50c08ea5ade50a6d1c2d7aca242a1c_o2_featured_v2.jpg"
-            },
-            "o2FeaturedImage": {
-                "url": "https:\/\/b.zmtcdn.com\/data\/pictures\/chains\/1\/491\/aa50c08ea5ade50a6d1c2d7aca242a1c_o2_featured_v2.jpg"
-            },
-            "rating": {
-                "has_fake_reviews": 0,
-                "aggregate_rating": "3.8",
-                "rating_text": "3.8",
-                "rating_subtitle": "Good",
-                "rating_color": "9ACD32",
-                "votes": "8,631",
-                "subtext": "REVIEWS",
-                "is_new": false
-            },
-            "ratingNew": {
-                "newlyOpenedObj": null,
-                "suspiciousReviewObj": null,
-                "ratings": {
-                    "DINING": {
-                        "rating_type": "DINING",
-                        "rating": "3.5",
-                        "reviewCount": "506",
-                        "reviewTextSmall": "506 Reviews",
-                        "subtext": "506 Dining Reviews",
-                        "color": "#1C1C1C",
-                        "ratingV2": "3.5",
-                        "subtitle": "DINING",
-                        "sideSubTitle": "Dining Reviews",
-                        "bgColorV2": {
-                            "type": "green",
-                            "tint": "600"
-                        }
+            "id": "109521",
+            "name": "The Pizza Castle",
+            "cloudinaryImageId": "l1xa7ir1jiduujz0djco",
+            "locality": "Prem Nagar",
+            "areaName": "Ranipur",
+            "costForTwo": "₹200 for two",
+            "cuisines": [
+                "Pizzas",
+                "Pastas",
+                "Chinese"
+            ],
+            "avgRating": 3.9,
+            "veg": true,
+            "feeDetails": {
+                "restaurantId": "109521",
+                "fees": [
+                    {
+                        "name": "BASE_DISTANCE",
+                        "fee": 3100
                     },
-                    "DELIVERY": {
-                        "rating_type": "DELIVERY",
-                        "rating": "4.1",
-                        "reviewCount": "8,125",
-                        "reviewTextSmall": "8,125 Reviews",
-                        "subtext": "8,125 Delivery Reviews",
-                        "color": "#E23744",
-                        "ratingV2": "4.1",
-                        "subtitle": "DELIVERY",
-                        "sideSubTitle": "Delivery Reviews",
-                        "bgColorV2": {
-                            "type": "green",
-                            "tint": "700"
-                        },
-                        "newOnDelivery": false
+                    {
+                        "name": "BASE_TIME"
+                    },
+                    {
+                        "name": "ANCILLARY_SURGE_FEE"
+                    }
+                ],
+                "totalFee": 3100
+            },
+            "parentId": "212559",
+            "avgRatingString": "3.9",
+            "totalRatingsString": "5K+",
+            "sla": {
+                "deliveryTime": 30,
+                "lastMileTravel": 7.9,
+                "serviceability": "SERVICEABLE",
+                "slaString": "30 mins",
+                "lastMileTravelString": "7.9 km",
+                "iconType": "ICON_TYPE_EMPTY"
+            },
+            "availability": {
+                "nextCloseTime": "2023-10-05 23:45:00",
+                "opened": true
+            },
+            "badges": {
+                "imageBadges": [
+                    {
+                        "imageId": "v1695133679/badges/Pure_Veg111.png",
+                        "description": "pureveg"
+                    }
+                ]
+            },
+            "isOpen": true,
+            "type": "F",
+            "badgesV2": {
+                "entityBadges": {
+                    "imageBased": {
+                        "badgeObject": [
+                            {
+                                "attributes": {
+                                    "description": "pureveg",
+                                    "imageId": "v1695133679/badges/Pure_Veg111.png"
+                                }
+                            }
+                        ]
+                    },
+                    "textBased": {
+
+                    },
+                    "textExtendedBadges": {
+
                     }
                 }
             },
-            "cft": {
-                "text": "\u20b9500 for two"
+            "aggregatedDiscountInfoV3": {
+                "header": "₹125 OFF",
+                "subHeader": "ABOVE ₹249",
+                "discountTag": "FLAT DEAL"
             },
-            "cfo": {
-                "text": "\u20b9150 for one"
+            "loyaltyDiscoverPresentationInfo": {
+                "badgeType": "BADGE_TYPE_OFFER_PACK",
+                "offerSubText": "with offer pack",
+                "nonSwiggyOneFreedelMessage": "FREE DELIVERY"
             },
-            "locality": {
-                "name": "Connaught Place, New Delhi",
-                "address": "1st Floor, Rajiv Gandhi Handicraft Bhavan, Baba Kharak Singh Marg, Connaught Place, New Delhi",
-                "localityUrl": "ncr\/connaught-place-delhi-restaurants"
-            },
-            "timing": {
-                "text": "",
-                "color": ""
-            },
-            "cuisine": [
-                {
-                    "deeplink": "zomato:\/\/search?deeplink_filters=WyJ7XCJjb250ZXh0XCI6XCJhbGxcIn0iLCJ7XCJjdWlzaW5lX2lkXCI6W1wiMTAxNVwiXX0iXQ%3D%3D",
-                    "url": "https:\/\/www.zomato.com\/ncr\/restaurants\/mithai\/",
-                    "name": "Mithai"
-                },
-                {
-                    "deeplink": "zomato:\/\/search?deeplink_filters=WyJ7XCJjb250ZXh0XCI6XCJhbGxcIn0iLCJ7XCJjdWlzaW5lX2lkXCI6W1wiNTBcIl19Il0%3D",
-                    "url": "https:\/\/www.zomato.com\/ncr\/restaurants\/north-indian\/",
-                    "name": "North Indian"
-                },
-                {
-                    "deeplink": "zomato:\/\/search?deeplink_filters=WyJ7XCJjb250ZXh0XCI6XCJhbGxcIn0iLCJ7XCJjdWlzaW5lX2lkXCI6W1wiODVcIl19Il0%3D",
-                    "url": "https:\/\/www.zomato.com\/ncr\/restaurants\/south-indian\/",
-                    "name": "South Indian"
-                },
-                {
-                    "deeplink": "zomato:\/\/search?deeplink_filters=WyJ7XCJjb250ZXh0XCI6XCJhbGxcIn0iLCJ7XCJjdWlzaW5lX2lkXCI6W1wiOTBcIl19Il0%3D",
-                    "url": "https:\/\/www.zomato.com\/ncr\/restaurants\/street-food\/",
-                    "name": "Street Food"
-                },
-                {
-                    "deeplink": "zomato:\/\/search?deeplink_filters=WyJ7XCJjb250ZXh0XCI6XCJhbGxcIn0iLCJ7XCJjdWlzaW5lX2lkXCI6W1wiNDBcIl19Il0%3D",
-                    "url": "https:\/\/www.zomato.com\/ncr\/restaurants\/fast-food\/",
-                    "name": "Fast Food"
-                },
-                {
-                    "deeplink": "zomato:\/\/search?deeplink_filters=WyJ7XCJjb250ZXh0XCI6XCJhbGxcIn0iLCJ7XCJjdWlzaW5lX2lkXCI6W1wiMTY0XCJdfSJd",
-                    "url": "https:\/\/www.zomato.com\/ncr\/restaurants\/juices\/",
-                    "name": "Juices"
-                },
-                {
-                    "deeplink": "zomato:\/\/search?deeplink_filters=WyJ7XCJjb250ZXh0XCI6XCJhbGxcIn0iLCJ7XCJjdWlzaW5lX2lkXCI6W1wiMjcwXCJdfSJd",
-                    "url": "https:\/\/www.zomato.com\/ncr\/restaurants\/beverages\/",
-                    "name": "Beverages"
+            "differentiatedUi": {
+                "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                "differentiatedUiMediaDetails": {
+                    "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+                    "lottie": {
+
+                    },
+                    "video": {
+
+                    }
                 }
-            ],
-            "should_ban_ugc": false,
-            "costText": {
-                "text": "\u20b9150 for one"
+            },
+            "reviewsSummary": {
+
+            },
+            "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+            "restaurantOfferPresentationInfo": {
+
             }
         },
-        "order": {
-            "deliveryTime": "25 min",
-            "isServiceable": true,
-            "hasOnlineOrdering": true,
-            "actionInfo": {
-                "text": "Order Now",
-                "clickUrl": "\/ncr\/bikanervala-connaught-place-new-delhi\/order"
-            }
+        "analytics": {
+
         },
-        "gold": [],
-        "takeaway": [],
-        "cardAction": {
-            "text": "",
-            "clickUrl": "\/ncr\/bikanervala-connaught-place-new-delhi\/order",
-            "clickActionDeeplink": ""
-        },
-        "distance": "566 m",
-        "isPromoted": false,
-        "promotedText": "",
-        "trackingData": [
-            {
-                "table_name": "zsearch_events_log",
-                "payload": "{\"search_id\":\"02b37e8c-010a-42b7-81a1-4549213a9c49\",\"location_type\":\"delivery_cell\",\"location_id\":\"4110939063815503872\",\"page_type\":\"delivery\",\"app_type\":\"new_web_consumer\",\"section\":\"restaurants\",\"entity_type\":\"restaurant\",\"entity_id\":\"4057\",\"element_type\":\"listing\",\"rank\":3}",
-                "event_names": {
-                    "tap": "{\"action\":\"tap\"}",
-                    "impression": "{\"action\":\"impression\"}"
-                }
-            }
-        ],
-        "allCTA": [],
-        "promoOffer": "",
-        "checkBulkOffers": true,
-        "bulkOffers": [],
-        "isDisabled": false,
-        "bottomContainers": [
-            {
-                "image": {
-                    "url": "https:\/\/b.zmtcdn.com\/data\/o2_assets\/0b07ef18234c6fdf9365ad1c274ae0631612687510.png",
-                    "aspect_ratio": 2.66666666667
-                },
-                "text": "Follows all Max Safety measures to ensure your food is safe"
-            }
-        ]
+        "cta": {
+            "link": "https://www.swiggy.com/restaurants/the-pizza-castle-prem-nagar-ranipur-haridwar-109521",
+            "type": "WEBLINK"
+        }
     },
-];
+    {
+        "info": {
+            "id": "371165",
+            "name": "Mitra Di Chaap",
+            "cloudinaryImageId": "nskgjkrplwcr9qf8alkb",
+            "locality": "Akhand Nagar",
+            "areaName": "Jagjeetpur",
+            "costForTwo": "₹300 for two",
+            "cuisines": [
+                "North Indian",
+                "Snacks",
+                "Biryani"
+            ],
+            "avgRating": 3.5,
+            "veg": true,
+            "feeDetails": {
+                "restaurantId": "371165",
+                "fees": [
+                    {
+                        "name": "BASE_DISTANCE",
+                        "fee": 3100
+                    },
+                    {
+                        "name": "BASE_TIME"
+                    },
+                    {
+                        "name": "ANCILLARY_SURGE_FEE"
+                    }
+                ],
+                "totalFee": 3100
+            },
+            "parentId": "16368",
+            "avgRatingString": "3.5",
+            "totalRatingsString": "1K+",
+            "sla": {
+                "deliveryTime": 28,
+                "lastMileTravel": 7.9,
+                "serviceability": "SERVICEABLE",
+                "slaString": "28 mins",
+                "lastMileTravelString": "7.9 km",
+                "iconType": "ICON_TYPE_EMPTY"
+            },
+            "availability": {
+                "nextCloseTime": "2023-10-05 23:45:00",
+                "opened": true
+            },
+            "badges": {
+                "imageBadges": [
+                    {
+                        "imageId": "v1695133679/badges/Pure_Veg111.png",
+                        "description": "pureveg"
+                    }
+                ]
+            },
+            "isOpen": true,
+            "type": "F",
+            "badgesV2": {
+                "entityBadges": {
+                    "imageBased": {
+                        "badgeObject": [
+                            {
+                                "attributes": {
+                                    "description": "pureveg",
+                                    "imageId": "v1695133679/badges/Pure_Veg111.png"
+                                }
+                            }
+                        ]
+                    },
+                    "textBased": {
+
+                    },
+                    "textExtendedBadges": {
+
+                    }
+                }
+            },
+            "aggregatedDiscountInfoV3": {
+                "header": "₹125 OFF",
+                "subHeader": "ABOVE ₹249",
+                "discountTag": "FLAT DEAL"
+            },
+            "loyaltyDiscoverPresentationInfo": {
+                "badgeType": "BADGE_TYPE_OFFER_PACK",
+                "offerSubText": "with offer pack",
+                "nonSwiggyOneFreedelMessage": "FREE DELIVERY"
+            },
+            "differentiatedUi": {
+                "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                "differentiatedUiMediaDetails": {
+                    "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+                    "lottie": {
+
+                    },
+                    "video": {
+
+                    }
+                }
+            },
+            "reviewsSummary": {
+
+            },
+            "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+            "restaurantOfferPresentationInfo": {
+
+            }
+        },
+        "analytics": {
+
+        },
+        "cta": {
+            "link": "https://www.swiggy.com/restaurants/mitra-di-chaap-akhand-nagar-jagjeetpur-haridwar-371165",
+            "type": "WEBLINK"
+        }
+    },
+    {
+        "info": {
+            "id": "152280",
+            "name": "Village Tandoori Fast Food",
+            "cloudinaryImageId": "oeq9hic2cckbkybmbnqt",
+            "locality": "Haridwar Main Road",
+            "areaName": "Ranipur",
+            "costForTwo": "₹200 for two",
+            "cuisines": [
+                "North Indian",
+                "Chinese"
+            ],
+            "avgRating": 4.1,
+            "veg": true,
+            "feeDetails": {
+                "restaurantId": "152280",
+                "fees": [
+                    {
+                        "name": "BASE_DISTANCE",
+                        "fee": 3100
+                    },
+                    {
+                        "name": "BASE_TIME"
+                    },
+                    {
+                        "name": "ANCILLARY_SURGE_FEE"
+                    }
+                ],
+                "totalFee": 3100
+            },
+            "parentId": "223533",
+            "avgRatingString": "4.1",
+            "totalRatingsString": "1K+",
+            "sla": {
+                "deliveryTime": 29,
+                "lastMileTravel": 8.2,
+                "serviceability": "SERVICEABLE",
+                "slaString": "29 mins",
+                "lastMileTravelString": "8.2 km",
+                "iconType": "ICON_TYPE_EMPTY"
+            },
+            "availability": {
+                "nextCloseTime": "2023-10-05 23:15:00",
+                "opened": true
+            },
+            "badges": {
+                "imageBadges": [
+                    {
+                        "imageId": "v1695133679/badges/Pure_Veg111.png",
+                        "description": "pureveg"
+                    }
+                ]
+            },
+            "isOpen": true,
+            "type": "F",
+            "badgesV2": {
+                "entityBadges": {
+                    "imageBased": {
+                        "badgeObject": [
+                            {
+                                "attributes": {
+                                    "description": "pureveg",
+                                    "imageId": "v1695133679/badges/Pure_Veg111.png"
+                                }
+                            }
+                        ]
+                    },
+                    "textBased": {
+
+                    },
+                    "textExtendedBadges": {
+
+                    }
+                }
+            },
+            "loyaltyDiscoverPresentationInfo": {
+                "badgeType": "BADGE_TYPE_OFFER_PACK",
+                "offerSubText": "with offer pack",
+                "nonSwiggyOneFreedelMessage": "FREE DELIVERY"
+            },
+            "differentiatedUi": {
+                "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                "differentiatedUiMediaDetails": {
+                    "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+                    "lottie": {
+
+                    },
+                    "video": {
+
+                    }
+                }
+            },
+            "reviewsSummary": {
+
+            },
+            "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+            "restaurantOfferPresentationInfo": {
+
+            }
+        },
+        "analytics": {
+
+        },
+        "cta": {
+            "link": "https://www.swiggy.com/restaurants/village-tandoori-fast-food-main-road-ranipur-haridwar-152280",
+            "type": "WEBLINK"
+        }
+    },
+    {
+        "info": {
+            "id": "145280",
+            "name": "Gurunanak Vaishno Bhojnalaya",
+            "cloudinaryImageId": "kmxtrdjnjlh0h0n7uqpn",
+            "locality": "Railway Road",
+            "areaName": "Bus Stand",
+            "costForTwo": "₹200 for two",
+            "cuisines": [
+                "North Indian",
+                "Chinese"
+            ],
+            "avgRating": 3.7,
+            "veg": true,
+            "feeDetails": {
+                "restaurantId": "145280",
+                "fees": [
+                    {
+                        "name": "BASE_DISTANCE",
+                        "fee": 3100
+                    },
+                    {
+                        "name": "BASE_TIME"
+                    },
+                    {
+                        "name": "ANCILLARY_SURGE_FEE"
+                    }
+                ],
+                "totalFee": 3100
+            },
+            "parentId": "92262",
+            "avgRatingString": "3.7",
+            "totalRatingsString": "100+",
+            "sla": {
+                "deliveryTime": 27,
+                "lastMileTravel": 9.7,
+                "serviceability": "SERVICEABLE",
+                "slaString": "27 mins",
+                "lastMileTravelString": "9.7 km",
+                "iconType": "ICON_TYPE_EMPTY"
+            },
+            "availability": {
+                "nextCloseTime": "2023-10-05 23:59:00",
+                "opened": true
+            },
+            "badges": {
+                "imageBadges": [
+                    {
+                        "imageId": "v1695133679/badges/Pure_Veg111.png",
+                        "description": "pureveg"
+                    }
+                ]
+            },
+            "isOpen": true,
+            "type": "F",
+            "badgesV2": {
+                "entityBadges": {
+                    "imageBased": {
+                        "badgeObject": [
+                            {
+                                "attributes": {
+                                    "description": "pureveg",
+                                    "imageId": "v1695133679/badges/Pure_Veg111.png"
+                                }
+                            }
+                        ]
+                    },
+                    "textBased": {
+
+                    },
+                    "textExtendedBadges": {
+
+                    }
+                }
+            },
+            "aggregatedDiscountInfoV3": {
+                "header": "60% OFF",
+                "subHeader": "UPTO ₹100"
+            },
+            "loyaltyDiscoverPresentationInfo": {
+                "badgeType": "BADGE_TYPE_OFFER_PACK",
+                "offerSubText": "with offer pack",
+                "nonSwiggyOneFreedelMessage": "FREE DELIVERY"
+            },
+            "differentiatedUi": {
+                "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                "differentiatedUiMediaDetails": {
+                    "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+                    "lottie": {
+
+                    },
+                    "video": {
+
+                    }
+                }
+            },
+            "reviewsSummary": {
+
+            },
+            "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+            "restaurantOfferPresentationInfo": {
+
+            }
+        },
+        "analytics": {
+
+        },
+        "cta": {
+            "link": "https://www.swiggy.com/restaurants/gurunanak-vaishno-bhojnalaya-railway-road-bus-stand-haridwar-145280",
+            "type": "WEBLINK"
+        }
+    },
+    {
+        "info": {
+            "id": "134094",
+            "name": "Satvik Bhoj",
+            "cloudinaryImageId": "dpyuymdvwsqojyf7l22n",
+            "locality": "Railway Road",
+            "areaName": "Sharvan Nath Nagar",
+            "costForTwo": "₹200 for two",
+            "cuisines": [
+                "North Indian",
+                "South Indian",
+                "Biryani"
+            ],
+            "avgRating": 3.7,
+            "veg": true,
+            "feeDetails": {
+                "restaurantId": "134094",
+                "fees": [
+                    {
+                        "name": "BASE_DISTANCE",
+                        "fee": 5200
+                    },
+                    {
+                        "name": "BASE_TIME"
+                    },
+                    {
+                        "name": "ANCILLARY_SURGE_FEE"
+                    }
+                ],
+                "totalFee": 5200
+            },
+            "parentId": "178878",
+            "avgRatingString": "3.7",
+            "totalRatingsString": "500+",
+            "sla": {
+                "deliveryTime": 33,
+                "lastMileTravel": 10.3,
+                "serviceability": "SERVICEABLE",
+                "slaString": "33 mins",
+                "lastMileTravelString": "10.3 km",
+                "iconType": "ICON_TYPE_EMPTY"
+            },
+            "availability": {
+                "nextCloseTime": "2023-10-05 23:59:00",
+                "opened": true
+            },
+            "badges": {
+                "imageBadges": [
+                    {
+                        "imageId": "v1695133679/badges/Pure_Veg111.png",
+                        "description": "pureveg"
+                    }
+                ]
+            },
+            "isOpen": true,
+            "type": "F",
+            "badgesV2": {
+                "entityBadges": {
+                    "imageBased": {
+                        "badgeObject": [
+                            {
+                                "attributes": {
+                                    "description": "pureveg",
+                                    "imageId": "v1695133679/badges/Pure_Veg111.png"
+                                }
+                            }
+                        ]
+                    },
+                    "textBased": {
+
+                    },
+                    "textExtendedBadges": {
+
+                    }
+                }
+            },
+            "aggregatedDiscountInfoV3": {
+                "header": "60% OFF",
+                "subHeader": "UPTO ₹100"
+            },
+            "differentiatedUi": {
+                "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                "differentiatedUiMediaDetails": {
+                    "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+                    "lottie": {
+
+                    },
+                    "video": {
+
+                    }
+                }
+            },
+            "reviewsSummary": {
+
+            },
+            "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+            "restaurantOfferPresentationInfo": {
+
+            }
+        },
+        "analytics": {
+
+        },
+        "cta": {
+            "link": "https://www.swiggy.com/restaurants/satvik-bhoj-railway-road-sharvan-nath-nagar-haridwar-134094",
+            "type": "WEBLINK"
+        }
+    },
+    {
+        "info": {
+            "id": "109540",
+            "name": "Shere Punjab Hotel",
+            "cloudinaryImageId": "wa0cfowgjcmmfwcdno9l",
+            "locality": "Railway Road",
+            "areaName": "Jwalapur",
+            "costForTwo": "₹300 for two",
+            "cuisines": [
+                "North Indian",
+                "Chinese"
+            ],
+            "avgRating": 4.2,
+            "veg": true,
+            "feeDetails": {
+                "restaurantId": "109540",
+                "fees": [
+                    {
+                        "name": "BASE_DISTANCE",
+                        "fee": 3100
+                    },
+                    {
+                        "name": "BASE_TIME"
+                    },
+                    {
+                        "name": "ANCILLARY_SURGE_FEE"
+                    }
+                ],
+                "totalFee": 3100
+            },
+            "parentId": "182819",
+            "avgRatingString": "4.2",
+            "totalRatingsString": "1K+",
+            "sla": {
+                "deliveryTime": 28,
+                "lastMileTravel": 6.1,
+                "serviceability": "SERVICEABLE",
+                "slaString": "28 mins",
+                "lastMileTravelString": "6.1 km",
+                "iconType": "ICON_TYPE_EMPTY"
+            },
+            "availability": {
+                "nextCloseTime": "2023-10-05 23:30:00",
+                "opened": true
+            },
+            "badges": {
+
+            },
+            "isOpen": true,
+            "type": "F",
+            "badgesV2": {
+                "entityBadges": {
+                    "imageBased": {
+
+                    },
+                    "textBased": {
+
+                    },
+                    "textExtendedBadges": {
+
+                    }
+                }
+            },
+            "aggregatedDiscountInfoV3": {
+                "header": "60% OFF",
+                "subHeader": "UPTO ₹100"
+            },
+            "loyaltyDiscoverPresentationInfo": {
+                "badgeType": "BADGE_TYPE_OFFER_PACK",
+                "offerSubText": "with offer pack",
+                "nonSwiggyOneFreedelMessage": "FREE DELIVERY"
+            },
+            "differentiatedUi": {
+                "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                "differentiatedUiMediaDetails": {
+                    "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+                    "lottie": {
+
+                    },
+                    "video": {
+
+                    }
+                }
+            },
+            "reviewsSummary": {
+
+            },
+            "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+            "restaurantOfferPresentationInfo": {
+
+            }
+        },
+        "analytics": {
+
+        },
+        "cta": {
+            "link": "https://www.swiggy.com/restaurants/shere-punjab-hotel-railway-road-jwalapur-haridwar-109540",
+            "type": "WEBLINK"
+        }
+    },
+    {
+        "info": {
+            "id": "129757",
+            "name": "Patiala Lassi",
+            "cloudinaryImageId": "rcwvv3rfrnfpsprvpjkt",
+            "locality": "Railway Road",
+            "areaName": "Sharvan Nath Nagar",
+            "costForTwo": "₹150 for two",
+            "cuisines": [
+                "Beverages"
+            ],
+            "avgRating": 4.5,
+            "veg": true,
+            "feeDetails": {
+                "restaurantId": "129757",
+                "fees": [
+                    {
+                        "name": "BASE_DISTANCE",
+                        "fee": 5200
+                    },
+                    {
+                        "name": "BASE_TIME"
+                    },
+                    {
+                        "name": "ANCILLARY_SURGE_FEE"
+                    }
+                ],
+                "totalFee": 5200
+            },
+            "parentId": "156293",
+            "avgRatingString": "4.5",
+            "totalRatingsString": "500+",
+            "sla": {
+                "deliveryTime": 30,
+                "lastMileTravel": 10.4,
+                "serviceability": "SERVICEABLE",
+                "slaString": "30 mins",
+                "lastMileTravelString": "10.4 km",
+                "iconType": "ICON_TYPE_EMPTY"
+            },
+            "availability": {
+                "nextCloseTime": "2023-10-05 23:59:00",
+                "opened": true
+            },
+            "badges": {
+                "imageBadges": [
+                    {
+                        "imageId": "v1690360529/Ratnesh_Badges/Only_on_swiggy_badge_4x.png",
+                        "description": "OnlyOnSwiggy"
+                    },
+                    {
+                        "imageId": "v1695133679/badges/Pure_Veg111.png",
+                        "description": "pureveg"
+                    }
+                ]
+            },
+            "isOpen": true,
+            "type": "F",
+            "badgesV2": {
+                "entityBadges": {
+                    "imageBased": {
+                        "badgeObject": [
+                            {
+                                "attributes": {
+                                    "description": "OnlyOnSwiggy",
+                                    "imageId": "v1690360529/Ratnesh_Badges/Only_on_swiggy_badge_4x.png"
+                                }
+                            },
+                            {
+                                "attributes": {
+                                    "description": "pureveg",
+                                    "imageId": "v1695133679/badges/Pure_Veg111.png"
+                                }
+                            }
+                        ]
+                    },
+                    "textBased": {
+
+                    },
+                    "textExtendedBadges": {
+
+                    }
+                }
+            },
+            "aggregatedDiscountInfoV3": {
+                "header": "60% OFF",
+                "subHeader": "UPTO ₹100"
+            },
+            "differentiatedUi": {
+                "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                "differentiatedUiMediaDetails": {
+                    "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+                    "lottie": {
+
+                    },
+                    "video": {
+
+                    }
+                }
+            },
+            "reviewsSummary": {
+
+            },
+            "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+            "restaurantOfferPresentationInfo": {
+
+            }
+        },
+        "analytics": {
+
+        },
+        "cta": {
+            "link": "https://www.swiggy.com/restaurants/patiala-lassi-railway-road-sharvan-nath-nagar-haridwar-129757",
+            "type": "WEBLINK"
+        }
+    }]
