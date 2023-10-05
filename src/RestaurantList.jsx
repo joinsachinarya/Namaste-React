@@ -2,6 +2,7 @@ import { dataObject } from "../constants"
 import { useEffect, useState } from "react";
 import * as Restaurant from "./RestaurantCard";
 import Shimmer from "./Shimmer";
+import { Link } from "react-router-dom";
 
 
 
@@ -30,6 +31,7 @@ function RestauRantList() {
         setRestaurantData(fetchedRestaurantData)
         setFilteredRestaurantData(fetchedRestaurantData)
     }
+
     return (
         <>
             <div className="search-bar">
@@ -40,10 +42,12 @@ function RestauRantList() {
             {!filteredRestaurantData ? <Shimmer /> :
                 <div className="restaurant-list">
                     {filteredRestaurantData.map((item, index) => (
-                        <div className="restaurant-card" key={filteredRestaurantData[index]?.info?.id}>
-                            <Restaurant.RestaurantCard {...filteredRestaurantData[index]?.info} />
-                            {filteredRestaurantData[index]?.info?.avgRating > 4 && <Restaurant.Recommended />}
-                        </div>
+                        <Link to={`/restaurant/${filteredRestaurantData[index]?.info?.id}`} key={filteredRestaurantData[index]?.info?.id}>
+                            <div className="restaurant-card" >
+                                <Restaurant.RestaurantCard {...filteredRestaurantData[index]?.info} />
+                                {filteredRestaurantData[index]?.info?.avgRating > 4 && <Restaurant.Recommended />}
+                            </div>
+                        </Link>
                     ))}
                 </div>
             }
