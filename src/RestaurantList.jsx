@@ -19,18 +19,19 @@ function RestauRantList() {
         setSearchText(e.target.value);
     }
 
-    // useEffect(() => {
-    //     async function fun() {
-    //         const readableStream = await fetch("https://www.swiggy.com/dapi/restaurants/list/v5?lat=29.91871&lng=78.065101&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING");
-    //         const response = await readableStream.json();
-    //         const fetchedRestaurantData = response?.data?.cards[5]?.card?.card?.gridElements?.infoWithStyle?.restaurants;
-    //         return fetchedRestaurantData;
-    //     }
-    //     setRestaurantData(fun());
-    // }, [])
+    useEffect(() => {
+        getRestaurantData();
+        console.log("useEffect");
+    }, [])
 
-
-    console.log(dataObject[0].info);
+    async function getRestaurantData() {
+        const readableStream = await fetch("https://www.swiggy.com/dapi/restaurants/list/v5?lat=28.5355161&lng=77.3910265&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING");
+        const response = await readableStream.json();
+        const fetchedRestaurantData = response?.data?.cards[2]?.card?.card?.gridElements?.infoWithStyle?.restaurants;
+        setRestaurantData(fetchedRestaurantData)
+        setFilteredRestaurantData(fetchedRestaurantData)
+    }
+    console.log("render");
     return (
         <>
             <div className="search-bar">
