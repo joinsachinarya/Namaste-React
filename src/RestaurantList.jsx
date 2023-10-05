@@ -7,8 +7,8 @@ import Shimmer from "./Shimmer";
 
 function RestauRantList() {
     const [searchText, setSearchText] = useState("");
-    const [restaurantData, setRestaurantData] = useState(dataObject);
-    const [filteredRestaurantData, setFilteredRestaurantData] = useState(dataObject);
+    const [restaurantData, setRestaurantData] = useState(null);
+    const [filteredRestaurantData, setFilteredRestaurantData] = useState(null);
 
     function filterRestaurant(text, data) {
         const filtereData = data.filter((item) => item?.info?.name?.toLowerCase().includes(text.toLowerCase()));
@@ -39,14 +39,16 @@ function RestauRantList() {
                 <button onClick={() => filterRestaurant(searchText, restaurantData)} className="button">Search</button>
             </div >
 
-            <div className="restaurant-list">
-                {filteredRestaurantData.map((item, index) => (
-                    <div className="restaurant-card" key={filteredRestaurantData[index]?.info?.id}>
-                        <Restaurant.RestaurantCard {...filteredRestaurantData[index]?.info} />
-                        {filteredRestaurantData[index]?.info?.avgRating > 4 && <Restaurant.Recommended />}
-                    </div>
-                ))}
-            </div>
+            {!filteredRestaurantData ? <Shimmer /> :
+                <div className="restaurant-list">
+                    {filteredRestaurantData.map((item, index) => (
+                        <div className="restaurant-card" key={filteredRestaurantData[index]?.info?.id}>
+                            <Restaurant.RestaurantCard {...filteredRestaurantData[index]?.info} />
+                            {filteredRestaurantData[index]?.info?.avgRating > 4 && <Restaurant.Recommended />}
+                        </div>
+                    ))}
+                </div>
+            }
         </>
     )
 
