@@ -21,7 +21,6 @@ function RestauRantList() {
 
     useEffect(() => {
         getRestaurantData();
-        console.log("useEffect");
     }, [])
 
     async function getRestaurantData() {
@@ -31,7 +30,6 @@ function RestauRantList() {
         setRestaurantData(fetchedRestaurantData)
         setFilteredRestaurantData(fetchedRestaurantData)
     }
-    console.log("render");
     return (
         <>
             <div className="search-bar">
