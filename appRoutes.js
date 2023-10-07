@@ -6,6 +6,7 @@ import ErrorComponent from "./src/ErrorComponent";
 import Body from "./src/Body";
 import RestaurantCardDetails from "./src/RestaurantCardDetails";
 import Profile from "./src/Profile";
+import ProfileClassComponent from "./src/ProfileClassComponent";
 
 const appRouter = createBrowserRouter([
     {
@@ -24,7 +25,8 @@ const appRouter = createBrowserRouter([
                 children: [
                     {
                         path: "profile",
-                        element: <Profile />
+                        element: <ProfileClassComponent />,
+                        element: <Profile />,
                     }
                 ]
 
