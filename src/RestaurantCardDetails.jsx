@@ -28,10 +28,10 @@ function RestaurantCardDetails() {
                         <h4 style={{ color: "greenyellow" }}>Two plates only on: ₹{details.costForTwo}/-</h4>
                     </div>
                     <div style={{ margin: "32px" }}>
-                        <h2 style={{ color: "gold" }}>Restaurant Type: {details.veg ? "Veg" : "Nonveg and Veg"}</h2>
+                        <h2 style={{ color: "gold" }}>Restaurant Type: {details.veg ? "Veg" : "NonVeg"}</h2>
                         <h2>Menu Items:</h2>
                         {details?.cuisines?.map((cuisine, index) => (
-                            <ul style={{ marginLeft: "16px", color: "green" }}>
+                            <ul style={{ marginLeft: "16px", color: "green" }} key={index}>
                                 <li>{cuisine}</li>
                             </ul>
                         ))}
