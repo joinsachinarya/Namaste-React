@@ -4,7 +4,7 @@ import About from "./src/About";
 import Contact from "./src/Contact";
 import ErrorComponent from "./src/ErrorComponent";
 import Body from "./src/Body";
-import RestaurantDetails from "./src/RestaurantDetails";
+import RestaurantCardDetails from "./src/RestaurantCardDetails";
 
 const appRouter = createBrowserRouter([
     {
@@ -27,7 +27,7 @@ const appRouter = createBrowserRouter([
             },
             {
                 path: "restaurant/:id",
-                element: <RestaurantDetails />
+                element: <RestaurantCardDetails />
             }
         ]
     },
