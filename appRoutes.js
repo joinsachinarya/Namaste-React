@@ -25,8 +25,8 @@ const appRouter = createBrowserRouter([
                 children: [
                     {
                         path: "profile",
-                        element: <ProfileClassComponent topic={"class"} />,
-                        // element: <Profile topic={"function"} />,
+                        // element: <ProfileClassComponent topic={"class"} />,
+                        element: <Profile topic={"function"} />,
                     }
                 ]
 

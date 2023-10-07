@@ -16,6 +16,9 @@ class ProfileClassComponent extends Component {
     componentDidUpdate() {
         console.log("componentDidUpdate");
     }
+    componentWillUnmount() {
+        console.log("left the page");
+    }
 
     render() {
         console.log("render");

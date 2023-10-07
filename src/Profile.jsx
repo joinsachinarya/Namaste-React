@@ -4,8 +4,16 @@ function Profile({ topic }) {
     const [day, setDay] = useState(0);
 
     useEffect(() => {
-        console.log("useEffect");
-    }, [])
+        const interval = setInterval(() => {
+            console.log("useEffect");
+        }, 1000)
+
+        return () => {
+            clearInterval(interval);
+            console.log("left the page");
+        }
+    }, [day])
+
     console.log("render");
 
     return (
@@ -13,7 +21,7 @@ function Profile({ topic }) {
             Functional component : Profile
             <p>Topic: {topic}</p>
             <i>Day: {day}</i>
-            <button onClick={() => setDay(1)}>Chnage day</button>
+            <button onClick={() => setDay(1)}>Change day</button>
         </h2>
     )
 }
