@@ -7,14 +7,23 @@ class ProfileClassComponent extends Component {
             day: 0,
             day2: 0
         }
+        console.log("constructor");
     }
+
+    componentDidMount() {
+        console.log("componentDidMount");
+    }
+    componentDidUpdate() {
+        console.log("componentDidUpdate");
+    }
+
     render() {
+        console.log("render");
         return (
             <h2>
                 Class component : Profile
                 <p>Topic: {this.props.topic}</p>
                 <i>Day: {this.state.day}</i>
-                {/* <i>{this.state.day2}</i> */}
                 <button onClick={() => this.setState({ day: 1 })}>Change day</button>
             </h2>
         )

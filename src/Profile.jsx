@@ -1,7 +1,12 @@
-import { useState } from "react"
+import { useEffect, useState } from "react"
 
 function Profile({ topic }) {
-    const [day, setDay] = useState(0)
+    const [day, setDay] = useState(0);
+
+    useEffect(() => {
+        console.log("useEffect");
+    }, [])
+    console.log("render");
 
     return (
         <h2>
