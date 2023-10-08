@@ -1,16 +1,20 @@
-import { dataObject } from "../constants"
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import * as Restaurant from "./RestaurantCard";
 import Shimmer from "./Shimmer";
 import { Link } from "react-router-dom";
-import { fetchUrlData } from "./utils/fetchUrlData";
+import useOnline from "../hooks/useOnline";
+import Offline from "./Offline";
+import useRestaurants from "../hooks/useRestaurants";
 
 
 
 function RestauRantList() {
     const [searchText, setSearchText] = useState("");
-    const [restaurantData, setRestaurantData] = useState(null);
     const [filteredRestaurantData, setFilteredRestaurantData] = useState(null);
+    const isOnline = useOnline();
+
+
+    const restaurants = useRestaurants();
 
     function filterRestaurant(text, data) {
         const filtereData = data.filter((item) => item?.info?.name?.toLowerCase().includes(text.toLowerCase()));
@@ -21,17 +25,7 @@ function RestauRantList() {
         setSearchText(e.target.value);
     }
 
-    useEffect(() => {
-        getRestaurantData();
-    }, [])
 
-    const url = "https://www.swiggy.com/dapi/restaurants/list/v5?lat=28.5355161&lng=77.3910265&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING";
-    async function getRestaurantData() {
-        const response = await fetchUrlData(url);
-        const fetchedRestaurantData = response?.data?.cards[2]?.card?.card?.gridElements?.infoWithStyle?.restaurants;
-        setRestaurantData(fetchedRestaurantData)
-        setFilteredRestaurantData(fetchedRestaurantData)
-    }
 
     return (
         <>
@@ -40,7 +34,7 @@ function RestauRantList() {
                 <button onClick={() => filterRestaurant(searchText, restaurantData)} className="button">Search</button>
             </div >
 
-            {!filteredRestaurantData ? <Shimmer /> :
+            {!isOnline ? <Offline /> : !filteredRestaurantData ? <Shimmer /> :
                 <div className="restaurant-list">
                     {filteredRestaurantData.map((item, index) => (
                         <Link to={`/restaurant/${filteredRestaurantData[index]?.info?.id}`} key={filteredRestaurantData[index]?.info?.id}>
