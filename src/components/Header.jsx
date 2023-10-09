@@ -18,8 +18,7 @@ function Header() {
                 <Link to="/contact"><li>Contact</li></Link>
                 <li>Cart</li>
             </ul>
-            {!isOnline && "🚨"}
-            {isLoggedIn ? <button onClick={() => setIsLoggedIn(false)} style={{ width: "100px" }}>Logout</button> : <button onClick={() => setIsLoggedIn(true)} style={{ width: "100px" }}>Login</button>}
+            {isLoggedIn ? <button onClick={() => setIsLoggedIn(false)} style={{ width: "100px" }}>Logout</button> : <button onClick={() => setIsLoggedIn(true)} style={{ width: "100px" }}>Login  <p style={{ position: "absolute", top: "8px", right: "10px" }}>{!isOnline ? "🔴" : "🟢"}</p></button>}
         </div>
     )
 }

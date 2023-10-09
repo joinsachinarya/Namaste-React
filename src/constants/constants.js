@@ -4,7 +4,7 @@ export const CDN_IMG_BASE_URL = "https://media-assets.swiggy.com/swiggy/image/up
 
 export const FETCH_ALL_RESTAURANTS_URL = "https://www.swiggy.com/dapi/restaurants/list/v5?lat=28.5355161&lng=77.3910265&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING"
 
-export const FETCH_RESTAURANT_DETAILS_URL = `https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=28.5355161&lng=77.3910265&restaurantId=${resId}&catalog_qa=undefined&submitAction=ENTER`
+export const FETCH_RESTAURANT_DETAILS_URL = `https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=28.5355161&lng=77.3910265&restaurantId=resId&catalog_qa=undefined&submitAction=ENTER`
 
 export const dataObject = [
     {

@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import * as Restaurant from "./RestaurantCard";
 import Shimmer from "./Shimmer";
 import { Link } from "react-router-dom";
@@ -11,10 +11,14 @@ import useRestaurants from "../hooks/useRestaurants";
 function RestauRantList() {
     const [searchText, setSearchText] = useState("");
     const [filteredRestaurantData, setFilteredRestaurantData] = useState(null);
+
     const isOnline = useOnline();
-
-
     const restaurants = useRestaurants();
+    console.log(filteredRestaurantData, restaurants);
+
+    useEffect(() => {
+        setFilteredRestaurantData(restaurants);
+    }, [restaurants])
 
     function filterRestaurant(text, data) {
         const filtereData = data.filter((item) => item?.info?.name?.toLowerCase().includes(text.toLowerCase()));
@@ -25,13 +29,11 @@ function RestauRantList() {
         setSearchText(e.target.value);
     }
 
-
-
     return (
         <>
             <div className="search-bar">
                 <input type="text" placeholder="Search..." value={searchText} onChange={(event) => handleSearchTextValue(event)} />
-                <button onClick={() => filterRestaurant(searchText, restaurantData)} className="button">Search</button>
+                <button onClick={() => filterRestaurant(searchText, restaurants)} className="button">Search</button>
             </div >
 
             {!isOnline ? <Offline /> : !filteredRestaurantData ? <Shimmer /> :

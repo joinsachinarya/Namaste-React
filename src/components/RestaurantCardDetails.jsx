@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { CDN_IMG_BASE_URL } from "../constants";
+import { CDN_IMG_BASE_URL } from "../constants/constants";
 import { useParams } from "react-router-dom";
 import { fetchUrlData } from "../utils/fetchUrlData";
 import Shimmer from "./Shimmer";
@@ -7,18 +7,20 @@ import { FETCH_RESTAURANT_DETAILS_URL } from "../constants/constants";
 
 function RestaurantCardDetails() {
     const [details, setDetails] = useState(null);
+    const { id } = useParams();
+
     useEffect(() => {
         getRestaurantCardDetails();
     }, [])
-    const param = useParams();
 
-    const url = FETCH_RESTAURANT_DETAILS_URL;
+    const url = FETCH_RESTAURANT_DETAILS_URL.replace("resId", id);
     async function getRestaurantCardDetails() {
         const response = await fetchUrlData(url)
         const data = response?.data?.cards[0]?.card?.card?.info;
         setDetails(data)
-        console.log(data);
+        console.log(response);
     }
+
     return (
         <>
             {details ? (

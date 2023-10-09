@@ -1,12 +1,12 @@
-import { createBrowserRouter, RouterProvider } from "react-router-dom"
+import { createBrowserRouter } from "react-router-dom"
 import App from "./App"
-import About from "./src/About";
-import Contact from "./src/Contact";
-import ErrorComponent from "./src/ErrorComponent";
-import Body from "./src/Body";
-import RestaurantCardDetails from "./src/RestaurantCardDetails";
-import Profile from "./src/Profile";
-import ProfileClassComponent from "./src/ProfileClassComponent";
+import Contact from "./src/components/Contact";
+import ErrorComponent from "./src/components/ErrorComponent";
+import Body from "./src/components/Body";
+import About from "./src/components/About"
+import RestaurantCardDetails from "./src/components/RestaurantCardDetails";
+import Profile from "./src/components/Profile";
+import ProfileClassComponent from "./src/components/ProfileClassComponent";
 
 const appRouter = createBrowserRouter([
     {
