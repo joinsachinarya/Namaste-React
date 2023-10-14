@@ -19,9 +19,9 @@ function Header() {
                 <Link to="/instamart"><li>InstaMart</li></Link>
                 <li>Cart</li>
             </ul>
-            <div>
-                <p className="absolute right-0 top-0">{!isOnline ? "🔴" : "🟢"}</p>
+            <div className="flex">
                 <button className="px-5 py-2 font-medium" onClick={() => setIsLoggedIn(!isLoggedIn)}>{isLoggedIn ? "Logout" : "Login"}</button>
+                <p className="py-2">{!isOnline ? "🔴" : "🟢"}</p>
             </div>
         </div>
     )

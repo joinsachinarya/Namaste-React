@@ -4,13 +4,13 @@ function Shimmer() {
     return (
         <>
             {location.pathname === "/" &&
-                (<div className="shimmer-container">
-                    {Array(12).fill("").map((item, index) => (
-                        <div className="shimmer" key={index}></div>
+                (<div className="flex flex-wrap justify-center items-center">
+                    {Array(10).fill("").map((item, index) => (
+                        <div className="m-4 w-56 h-72 bg-slate-100 " key={index}></div>
                     ))}
                 </div>)
             }
-            {location.pathname !== "/" && (<div style={{ width: "500px", height: "800px", backgroundColor: "aliceblue", margin: "16px" }} />)}
+            {location.pathname !== "/" && (<div className="m-4 w-[400px] h-[500px] bg-slate-100" />)}
         </>
     )
 }

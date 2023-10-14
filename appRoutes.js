@@ -1,4 +1,4 @@
-import { lazy } from "react"
+import { lazy, Suspense } from "react"
 import App from "./App"
 import { createBrowserRouter } from "react-router-dom"
 import Contact from "./src/components/Contact";
@@ -43,7 +43,7 @@ const appRouter = createBrowserRouter([
             },
             {
                 path: "instamart",
-                element: <InstaMart />
+                element: <Suspense><InstaMart /></Suspense>
             }
         ]
     },
