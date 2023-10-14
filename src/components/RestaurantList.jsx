@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import useOnline from "../hooks/useOnline";
 import Offline from "./Offline";
 import useRestaurants from "../hooks/useRestaurants";
-
+import { filterRestaurants } from "../utils/filterRestaurants"
 
 
 function RestauRantList() {
@@ -14,14 +14,14 @@ function RestauRantList() {
 
     const isOnline = useOnline();
     const restaurants = useRestaurants();
-    console.log(filteredRestaurantData, restaurants);
+    console.log("render", "filteredRestaurantData:", filteredRestaurantData, "restaurants:", restaurants);
 
     useEffect(() => {
         setFilteredRestaurantData(restaurants);
     }, [restaurants])
 
     function filterRestaurant(text, data) {
-        const filtereData = data.filter((item) => item?.info?.name?.toLowerCase().includes(text.toLowerCase()));
+        const filtereData = filterRestaurants(text, data);
         setFilteredRestaurantData(filtereData);
     }
 

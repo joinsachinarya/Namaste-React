@@ -1,2 +1,2 @@
-const Offline = () => <h2>🚨Offline! Please check your internet connection!!</h2>
+const Offline = () => <><h2>🚨Offline! </h2> <b>Please check your internet connection!!</b></>
 export default Offline;

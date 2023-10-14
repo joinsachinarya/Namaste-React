@@ -18,7 +18,7 @@ function RestaurantCardDetails() {
         const response = await fetchUrlData(url)
         const data = response?.data?.cards[0]?.card?.card?.info;
         setDetails(data)
-        console.log(response);
+        console.log("restaurant details", response);
     }
 
     return (

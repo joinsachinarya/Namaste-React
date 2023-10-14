@@ -4,30 +4,30 @@ class ProfileClassComponent extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            day: 0,
-            day2: 0
+            testState: false,
+            testState2: 0
         }
-        console.log("constructor");
+        console.log("class component profile : constructor");
     }
 
     componentDidMount() {
-        console.log("componentDidMount");
+        console.log("class component profile :componentDidMount");
     }
     componentDidUpdate() {
-        console.log("componentDidUpdate");
+        console.log("class component profile :componentDidUpdate");
     }
     componentWillUnmount() {
-        console.log("left the page");
+        console.log("class component profile :componentWillUnmount (left the page) ");
     }
 
     render() {
-        console.log("render");
+        console.log("class component profile :render");
         return (
             <h2>
                 Class component : Profile
                 <p>Topic: {this.props.topic}</p>
-                <i>Day: {this.state.day}</i>
-                <button onClick={() => this.setState({ day: 1 })}>Change day</button>
+                <i>testState: {this.state.testState}</i>
+                <button onClick={() => this.setState({ testState: !testState })}>Update State</button>
             </h2>
         )
     }

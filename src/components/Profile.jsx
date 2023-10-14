@@ -1,18 +1,18 @@
 import { useEffect, useState } from "react"
 
 function Profile({ topic }) {
-    const [day, setDay] = useState(0);
+    const [testState, setTestState] = useState(false);
 
     useEffect(() => {
         const interval = setInterval(() => {
-            console.log("useEffect");
+            console.log("useEffect : componentDidMount");
         }, 1000)
 
         return () => {
             clearInterval(interval);
-            console.log("left the page");
+            console.log("left the page: componentWilUnmount");
         }
-    }, [day])
+    }, [testState])
 
     console.log("render");
 
@@ -20,8 +20,8 @@ function Profile({ topic }) {
         <h2>
             Functional component : Profile
             <p>Topic: {topic}</p>
-            <i>Day: {day}</i>
-            <button onClick={() => setDay(1)}>Change day</button>
+            <i>State: {testState}</i>
+            <button onClick={() => setTestState(!testState)}>Update State</button>
         </h2>
     )
 }

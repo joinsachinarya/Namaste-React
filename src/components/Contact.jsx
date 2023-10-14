@@ -1,7 +1,7 @@
 function Contact() {
     return (
         <h1>
-            Hi, you can connect with me on my Email: <i>sachinkarya333@gmail.com</i>
+            Hi, you can connect with me on my Email: <p>sachinkarya333@gmail.com</p>
         </h1>
     )
 }
