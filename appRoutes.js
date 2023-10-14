@@ -8,6 +8,7 @@ import About from "./src/components/About"
 import RestaurantCardDetails from "./src/components/RestaurantCardDetails";
 import Profile from "./src/components/Profile";
 import ProfileClassComponent from "./src/components/ProfileClassComponent";
+import Shimmer from "./src/components/Shimmer";
 const InstaMart = lazy(() => import("./src/components/InstaMart"))
 
 const appRouter = createBrowserRouter([
@@ -43,7 +44,7 @@ const appRouter = createBrowserRouter([
             },
             {
                 path: "instamart",
-                element: <Suspense><InstaMart /></Suspense>
+                element: <Suspense fallback={<Shimmer />}><InstaMart /></Suspense>
             }
         ]
     },
