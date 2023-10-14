@@ -1,7 +1,5 @@
 import RestauRantList from "./RestaurantList";
 function Body() {
-    return <div>
-        <RestauRantList />
-    </div>
+    return <div className="flex flex-col"> <RestauRantList /></div>
 }
 export default Body;

@@ -1,3 +1,8 @@
+/* *{
+    margin: 0px;
+    padding: 0px;
+}
+
 body{
     margin: 1rem;
 }
@@ -10,7 +15,7 @@ body{
 }
 
 .logo{
-    width: 100px;
+    width: 50px;
 }
 .logo > img{
     width: 100%;
@@ -19,17 +24,19 @@ body{
 .header > ul{
     list-style: none;
     display: flex;
+    align-items: center;
+    gap: 16px;
 }
-.header > ul > li{
-    padding-left: 1rem;
+.header > ul > a{
+    text-decoration: none;
 }
 
 .restaurant-card{
-    width: 200px;
+    width: 194px;
     border: 1px solid black;
     margin: 1rem 1rem 1rem 0;
     text-align: center;
-
+    height: 300px;
 }
 
 .restaurant-card > img{
@@ -40,19 +47,23 @@ body{
     display: flex;
     flex-wrap: wrap;
 }
+.restaurant-list > a{
+    text-decoration: none;
+}
 
 .footer{
     opacity: 0.5;
+    text-align: center;
+    margin-top: 5rem;
 }
 
 .recommended{
-    /* margin-right: -10px;
-    margin-left: -10px; */
     z-index: 2;
 }
 .search-bar{
     margin-top: 1rem;
-    text-align: center
+    text-align: center;
+    display: flex;
 }
 .search-bar >input{
     width: 100%;
@@ -60,7 +71,37 @@ body{
     text-align: center;
 }
 .button{
-    width:100px;
-    height: 50px;
-    margin-top: 1rem;
+    width:60px;
+    margin-left: 1rem;
 }
+.shimmer-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+.shimmer{
+    width: 200px;
+    height: 250px;
+    background-color: aliceblue;
+    border: 1px solid aliceblue;
+    margin: 16px;
+
+}
+
+.restaurant-details{
+    display: flex;
+} */
+
+
+/* 
+* Ways of writing CSS:
+* 1: write inside index.css
+* 2: write inline css 
+* 3: use component library/framework like : Bootstrap, Material UI, Chakra UI, Base UI, Ant Design, Base UI etc
+* 4: use Styled componet
+* 5: use Tailwind CSS (which is like css like syntax inside jsx/html,  just like jsx is html like syntax inside js)
+*/
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
