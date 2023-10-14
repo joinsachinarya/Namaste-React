@@ -6,6 +6,8 @@ export const FETCH_ALL_RESTAURANTS_URL = "https://www.swiggy.com/dapi/restaurant
 
 export const FETCH_RESTAURANT_DETAILS_URL = `https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=28.5355161&lng=77.3910265&restaurantId=resId&catalog_qa=undefined&submitAction=ENTER`
 
+export const GITHUB_PROFILE_URL = `https://api.github.com/users/sac6inarya`;
+
 export const dataObject = [
     {
         "info": {
