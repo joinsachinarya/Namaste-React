@@ -1,3 +1,4 @@
+
 <!-- 
 Other names of Lazy Loading: 
 
@@ -51,3 +52,4 @@ Component has two phase:
 <!-- 
 If the child component is doin async call then the parent componentDidMount lifecycle get triggered befor child componentDidMount
  -->
+
