@@ -1,4 +1,4 @@
-*{
+/* *{
     margin: 0px;
     padding: 0px;
 }
@@ -89,4 +89,19 @@ body{
 
 .restaurant-details{
     display: flex;
-}
+} */
+
+
+/* 
+* Ways of writing CSS:
+* 1: write inside index.css
+* 2: write inline css 
+* 3: use component library/framework like : Bootstrap, Material UI, Chakra UI, Base UI, Ant Design, Base UI etc
+* 4: use Styled componet
+* 5: use Tailwind CSS (which is like css like syntax inside jsx/html,  just like jsx is html like syntax inside js)
+*/
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

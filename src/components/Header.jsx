@@ -8,18 +8,20 @@ function Header() {
     const isOnline = useOnline();
 
     return (
-        <div className="header">
-            <Link to="/" className="logo">
+        <div className="flex justify-between items-center p-2 bg-blue-100 shadow-md">
+            <Link to="/" className="w-16">
                 <img alt="logo" src={logo.src} />
             </Link>
-            <ul>
+            <ul className="flex gap-4">
                 <Link to="/">  <li>Home</li></Link>
                 <Link to="/about"> <li>About</li> </Link>
                 <Link to="/contact"><li>Contact</li></Link>
                 <li>Cart</li>
             </ul>
-            {isLoggedIn ? <button onClick={() => setIsLoggedIn(false)} style={{ width: "100px" }}>Logout</button> : <button onClick={() => setIsLoggedIn(true)} style={{ width: "100px" }}>Login </button>}
-            <p style={{ position: "absolute", top: "8px", right: "10px" }}>{!isOnline ? "🔴" : "🟢"}</p>
+            <div>
+                <p className="absolute right-0 top-0">{!isOnline ? "🔴" : "🟢"}</p>
+                <button className="px-5 py-2 font-medium" onClick={() => setIsLoggedIn(!isLoggedIn)}>{isLoggedIn ? "Logout" : "Login"}</button>
+            </div>
         </div>
     )
 }

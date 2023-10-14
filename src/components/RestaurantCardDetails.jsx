@@ -24,18 +24,18 @@ function RestaurantCardDetails() {
     return (
         <>
             {details ? (
-                <div className="restaurant-details">
-                    <div style={{ marginTop: "32px" }}>
+                <div className="flex border m-10 rounded-lg">
+                    <div className="bg-orange-50 text-center">
                         <img alt={details.name} src={`${CDN_IMG_BASE_URL}` + `${details.cloudinaryImageId}`} style={{ width: "500px" }} />
-                        <h1 style={{ color: "orange" }}>{details.name} <span style={{ fontSize: "22px" }}>, {details.city}</span></h1>
-                        <h4 style={{ color: "greenyellow" }}>Two plates only on: ₹{details.costForTwo}/-</h4>
+                        <p className="font-bold text-2xl py-2" style={{ color: "orange" }}>{details.name} <span style={{ fontSize: "22px" }}>, {details.city}</span></p>
+                        <p className="text-red-600 py-2 font-semibold">Two plates only on: ₹{details.costForTwo}/-</p>
                     </div>
-                    <div style={{ margin: "32px" }}>
-                        <h2 style={{ color: "gold" }}>Restaurant Type: {details.veg ? "Veg" : "NonVeg"}</h2>
-                        <h2>Menu Items:</h2>
+                    <div className="p-8">
+                        <p className="text-red-400 font-semibold text-xl">Restaurant Type: {details.veg ? "Veg" : "NonVeg"}</p>
+                        <p className="pt-5 tex-base">Cuisines Types:   👇</p>
                         {details?.cuisines?.map((cuisine, index) => (
-                            <ul style={{ marginLeft: "16px", color: "green" }} key={index}>
-                                <li>{cuisine}</li>
+                            <ul className="text-orange-500 pt-2" key={index}>
+                                <li> 🍕 {cuisine}</li>
                             </ul>
                         ))}
 

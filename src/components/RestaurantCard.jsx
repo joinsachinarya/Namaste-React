@@ -15,7 +15,7 @@ export function RestaurantCard({ name, cloudinaryImageId, costForTwo, cuisines, 
 export function Recommended() {
 
     return (
-        <div className="recommended" >
+        <div className="opacity-75" >
             Recommended 🌟
         </div>
     )

@@ -23,12 +23,11 @@ class ProfileClassComponent extends Component {
     render() {
         console.log("class component profile :render");
         return (
-            <h2>
+            <div className=" font-medium text-xl p-6" >
                 Class component : Profile
                 <p>Topic: {this.props.topic}</p>
-                <i>testState: {this.state.testState}</i>
-                <button onClick={() => this.setState({ testState: !testState })}>Update State</button>
-            </h2>
+                <button onClick={() => this.setState({ testState: !testState })} className="border bg-slate-100 rounded  p-2">Update State</button>
+            </div >
         )
     }
 

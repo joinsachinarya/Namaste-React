@@ -31,16 +31,16 @@ function RestauRantList() {
 
     return (
         <>
-            <div className="search-bar">
-                <input type="text" placeholder="Search..." value={searchText} onChange={(event) => handleSearchTextValue(event)} />
-                <button onClick={() => filterRestaurant(searchText, restaurants)} className="button">Search</button>
+            <div className="px-10 py-6 text-center gap-4">
+                <input type="text" placeholder="Search..." value={searchText} onChange={(event) => handleSearchTextValue(event)} className="leading-10 h-10 border rounded-l-md text-center" />
+                <button onClick={() => filterRestaurant(searchText, restaurants)} className="h-10 bg-purple-200 px-5 rounded-r-md">Search</button>
             </div >
 
             {!isOnline ? <Offline /> : !filteredRestaurantData ? <Shimmer /> :
-                <div className="restaurant-list">
+                <div className="flex flex-wrap justify-center pb-10 gap-6">
                     {filteredRestaurantData.map((item, index) => (
                         <Link to={`/restaurant/${filteredRestaurantData[index]?.info?.id}`} key={filteredRestaurantData[index]?.info?.id}>
-                            <div className="restaurant-card" >
+                            <div className="flex flex-col w-64 h-full p-5 border rounded shadow-lg" >
                                 <Restaurant.RestaurantCard {...filteredRestaurantData[index]?.info} />
                                 {filteredRestaurantData[index]?.info?.avgRating > 4 && <Restaurant.Recommended />}
                             </div>

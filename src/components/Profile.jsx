@@ -17,12 +17,11 @@ function Profile({ topic }) {
     console.log("render");
 
     return (
-        <h2>
+        <div className="font-medium text-xl p-5 flex flex-col">
             Functional component : Profile
             <p>Topic: {topic}</p>
-            <i>State: {testState}</i>
-            <button onClick={() => setTestState(!testState)}>Update State</button>
-        </h2>
+            <button onClick={() => setTestState(!testState)} className="border bg-slate-100 rounded  p-2">Update State</button>
+        </div>
     )
 }
 export default Profile
