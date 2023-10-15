@@ -5,6 +5,7 @@ function InstaMartAccordion({ title, isDescVisible, setIsDescVisible }) {
     const handleIsDescVisible = () => {
         setIsDescVisible(!isDescVisible);
     }
+    console.log(title, isDescVisible);
 
     return (
         <div className="border p-5">
