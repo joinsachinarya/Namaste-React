@@ -36,7 +36,7 @@ const appRouter = createBrowserRouter([
             },
             {
                 path: "/contact",
-                element: <Contact contact={{ linkedIn: "https:/linkedin.com/in/dummy", email: "dummyemail@gmail.com" }} />
+                element: <Contact />
             },
             {
                 path: "restaurant/:id",
