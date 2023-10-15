@@ -1,4 +1,4 @@
-export const logo = { src: "https://imgs.search.brave.com/zRPCb1h2JzO3Zrokfar8lbxsxv2Ns0Fd9Mor6zklk7w/rs:fit:200:200:1/g:ce/aHR0cHM6Ly9tZW51/Znlwcm9kdWN0aW9u/LmltZ2l4Lm5ldC82/MzgyMDcyNzc2NjYx/NzE2NTYrMTEzNjEz/Ny5wbmc_YXV0bz1j/b21wcmVzcyxmb3Jt/YXQmYW1wO2g9MTA4/MCZhbXA7dz0xOTIw/JmFtcDtmaXQ9bWF4" }
+export const logo = { src: "https://shorturl.at/nxGLQ" }
 
 export const CDN_IMG_BASE_URL = "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/"
 
