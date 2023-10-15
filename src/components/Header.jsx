@@ -7,7 +7,7 @@ import UserContext from "../context/UserContext";
 function Header() {
     const [isLoggedIn, setIsLoggedIn] = useState(false);
     const isOnline = useOnline();
-    const user = useContext(UserContext);
+    const { user, setUser } = useContext(UserContext);
 
     return (
         <div className="flex justify-between items-center p-2 bg-blue-100 shadow-md">
