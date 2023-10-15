@@ -28,11 +28,13 @@ class ProfileClassComponent extends Component {
             <div className=" font-medium text-xl p-6 mb-10" >
                 Class component : Profile
                 <p>Topic: {this.props.topic}</p>
+
                 <UserContext.Consumer>
                     {(value) => (
                         <p>Consuming context in class component: {value.name} - {value.email}</p>
                     )}
                 </UserContext.Consumer>
+
                 <button onClick={() => this.setState({ testState: !this.state.testState })} className="border bg-slate-100 rounded  p-2">Update State</button>
             </div >
         )

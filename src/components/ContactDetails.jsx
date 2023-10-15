@@ -4,9 +4,9 @@ import ContactContext from "../context/ContactContext";
 
 function ContactDetails() {
 
-    const { linkedIn, email } = useContext(ContactContext);
+    const { linkedIn } = useContext(ContactContext);
     const user = useContext(UserContext);
-    console.log(linkedIn, email, user.email);
+    console.log(linkedIn, user.email);
 
     return (
         <div className="m-10 p-10">
