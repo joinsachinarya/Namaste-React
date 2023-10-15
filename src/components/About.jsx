@@ -16,9 +16,9 @@ function About() {
         return data;
     }
     console.log(profileData);
-    if (!profileData) return <Shimmer />;
+    if (!profileData) return <div className="grid justify-center"><Shimmer /></div>
     return (
-        <div className="font-medium text-xl flex flex-col justify-center items-center">
+        <div className="font-medium text-xl flex flex-col justify-center items-center mb-20">
             <p style={{ marginTop: "16px", marginBottom: "16px" }}> Hey, I am {profileData.name}, a Software Developer.</p>
             <img src={profileData.avatar_url} alt={profileData.name} />
             <Link to="profile" className="border bg-slate-100 rounded  p-2">Class Component LifeCycles Demo</Link>

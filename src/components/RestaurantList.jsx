@@ -37,7 +37,7 @@ function RestauRantList() {
             </div >
 
             {!isOnline ? <Offline /> : !filteredRestaurantData ? <Shimmer /> :
-                <div className="flex flex-wrap justify-center pb-10 gap-6">
+                <div className="flex flex-wrap justify-center pb-10 gap-6 mb-10">
                     {filteredRestaurantData.map((item, index) => (
                         <Link to={`/restaurant/${filteredRestaurantData[index]?.info?.id}`} key={filteredRestaurantData[index]?.info?.id}>
                             <div className="flex flex-col w-64 h-full p-5 border rounded shadow-lg" >

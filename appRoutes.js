@@ -28,15 +28,15 @@ const appRouter = createBrowserRouter([
                 children: [
                     {
                         path: "profile",
-                        // element: <ProfileClassComponent topic={"class"} />,
-                        element: <Profile topic={"function"} />,
+                        element: <ProfileClassComponent topic={"class"} />,
+                        // element: <Profile topic={"function"} />,
                     }
                 ]
 
             },
             {
                 path: "/contact",
-                element: <Contact />
+                element: <Contact contact={{ linkedIn: "https:/linkedin.com/in/dummy", email: "dummyemail@gmail.com" }} />
             },
             {
                 path: "restaurant/:id",
