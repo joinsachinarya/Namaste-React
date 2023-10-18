@@ -10,7 +10,7 @@ function App() {
         email: "sachinkarya333@gmail.com"
     })
     return (
-        <UserContext.Provider value={user}>
+        <UserContext.Provider value={{ user: user, setUser: setUser }}>
             <Header />
             <Outlet />
             <Footer />
