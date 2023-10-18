@@ -9,6 +9,7 @@ import RestaurantCardDetails from "./src/components/RestaurantCardDetails";
 import Profile from "./src/components/Profile";
 import ProfileClassComponent from "./src/components/ProfileClassComponent";
 import Shimmer from "./src/components/Shimmer";
+import Cart from "./src/components/Cart";
 const InstaMart = lazy(() => import("./src/components/InstaMart"))
 
 const appRouter = createBrowserRouter([
@@ -28,8 +29,8 @@ const appRouter = createBrowserRouter([
                 children: [
                     {
                         path: "profile",
-                        // element: <ProfileClassComponent topic={"class"} />,
-                        element: <Profile topic={"function"} />,
+                        element: <ProfileClassComponent topic={"class"} />,
+                        // element: <Profile topic={"function"} />,
                     }
                 ]
 
@@ -45,6 +46,10 @@ const appRouter = createBrowserRouter([
             {
                 path: "instamart",
                 element: <Suspense fallback={<Shimmer />}><InstaMart /></Suspense>
+            },
+            {
+                path: "/cart",
+                element: <Cart />
             }
         ]
     },

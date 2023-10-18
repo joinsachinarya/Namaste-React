@@ -1,10 +1,12 @@
-export const logo = { src: "https://imgs.search.brave.com/zRPCb1h2JzO3Zrokfar8lbxsxv2Ns0Fd9Mor6zklk7w/rs:fit:200:200:1/g:ce/aHR0cHM6Ly9tZW51/Znlwcm9kdWN0aW9u/LmltZ2l4Lm5ldC82/MzgyMDcyNzc2NjYx/NzE2NTYrMTEzNjEz/Ny5wbmc_YXV0bz1j/b21wcmVzcyxmb3Jt/YXQmYW1wO2g9MTA4/MCZhbXA7dz0xOTIw/JmFtcDtmaXQ9bWF4" }
+export const logo = { src: "https://shorturl.at/nxGLQ" }
 
 export const CDN_IMG_BASE_URL = "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/"
 
 export const FETCH_ALL_RESTAURANTS_URL = "https://www.swiggy.com/dapi/restaurants/list/v5?lat=28.5355161&lng=77.3910265&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING"
 
 export const FETCH_RESTAURANT_DETAILS_URL = `https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=28.5355161&lng=77.3910265&restaurantId=resId&catalog_qa=undefined&submitAction=ENTER`
+
+export const GITHUB_PROFILE_URL = `https://api.github.com/users/sac6inarya`;
 
 export const dataObject = [
     {

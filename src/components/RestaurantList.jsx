@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import * as Restaurant from "./RestaurantCard";
 import Shimmer from "./Shimmer";
 import { Link } from "react-router-dom";
@@ -6,12 +6,14 @@ import useOnline from "../hooks/useOnline";
 import Offline from "./Offline";
 import useRestaurants from "../hooks/useRestaurants";
 import { filterRestaurants } from "../utils/filterRestaurants"
+import UserContext from "../context/UserContext";
 
 
 function RestauRantList() {
     const [searchText, setSearchText] = useState("");
     const [filteredRestaurantData, setFilteredRestaurantData] = useState(null);
 
+    const { user, setUser } = useContext(UserContext);
     const isOnline = useOnline();
     const restaurants = useRestaurants();
     console.log("render", "filteredRestaurantData:", filteredRestaurantData, "restaurants:", restaurants);
@@ -29,6 +31,7 @@ function RestauRantList() {
         setSearchText(e.target.value);
     }
 
+
     return (
         <>
             <div className="px-10 py-6 text-center gap-4">
@@ -36,8 +39,10 @@ function RestauRantList() {
                 <button onClick={() => filterRestaurant(searchText, restaurants)} className="h-10 bg-purple-200 px-5 rounded-r-md">Search</button>
             </div >
 
+            <input placeholder="Update defalut context value demo" value={user.name} className="text-center outline-none pb-2" onChange={(e) => setUser({ ...user, name: e.target.value })} />
+
             {!isOnline ? <Offline /> : !filteredRestaurantData ? <Shimmer /> :
-                <div className="flex flex-wrap justify-center pb-10 gap-6">
+                <div className="flex flex-wrap justify-center pb-10 gap-6 mb-10">
                     {filteredRestaurantData.map((item, index) => (
                         <Link to={`/restaurant/${filteredRestaurantData[index]?.info?.id}`} key={filteredRestaurantData[index]?.info?.id}>
                             <div className="flex flex-col w-64 h-full p-5 border rounded shadow-lg" >
