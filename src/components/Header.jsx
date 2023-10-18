@@ -5,7 +5,7 @@ import useOnline from "../hooks/useOnline";
 import UserContext from "../context/UserContext";
 
 function Header() {
-    const [isLoggedIn, setIsLoggedIn] = useState(false);
+    const [isLoggedIn, setIsLoggedIn] = useState(true);
     const isOnline = useOnline();
     const { user, setUser } = useContext(UserContext);
 
@@ -19,7 +19,7 @@ function Header() {
                 <Link to="/about"> <li>About</li> </Link>
                 <Link to="/contact"><li>Contact</li></Link>
                 <Link to="/instamart"><li>InstaMart</li></Link>
-                <li>Cart</li>
+                <Link to="/cart"><li>Cart</li></Link>
             </ul>
             <div className="flex">
                 <button className="px-5 py-2 font-medium" onClick={() => setIsLoggedIn(!isLoggedIn)}>{isLoggedIn ? "Logout" : "Login"}</button>

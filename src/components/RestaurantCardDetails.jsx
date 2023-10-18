@@ -7,6 +7,7 @@ import { FETCH_RESTAURANT_DETAILS_URL } from "../constants/constants";
 
 function RestaurantCardDetails() {
     const [details, setDetails] = useState(null);
+    const [menuItems, setMenuItems] = useState(null);
     const { id } = useParams();
 
     useEffect(() => {
@@ -17,8 +18,9 @@ function RestaurantCardDetails() {
     async function getRestaurantCardDetails() {
         const response = await fetchUrlData(url)
         const data = response?.data?.cards[0]?.card?.card?.info;
-        setDetails(data)
-        console.log("restaurant details", response);
+        setDetails(data);
+        const menuItems = response?.data?.cards[2]?.groupedCard?.cardGroupMap?.REGULAR?.cards[2]?.card?.card?.itemCards
+        setMenuItems(menuItems)
     }
 
     return (
@@ -32,6 +34,7 @@ function RestaurantCardDetails() {
                     </div>
                     <div className="p-8">
                         <p className="text-red-400 font-semibold text-xl">Restaurant Type: {details.veg ? "Veg" : "NonVeg"}</p>
+
                         <p className="pt-5 tex-base">Cuisines Types:   👇</p>
                         {details?.cuisines?.map((cuisine, index) => (
                             <ul className="text-orange-500 pt-2" key={index}>
@@ -39,6 +42,12 @@ function RestaurantCardDetails() {
                             </ul>
                         ))}
 
+                        <p className="pt-5 tex-base">Menu Items:   👇</p>
+                        {menuItems?.map((item, index) => (
+                            <ul className="text-red-400 pt-2" key={index}>
+                                <li> 🍕 {item?.card?.info?.name} <button className="border bg-green-400 text-white rounded p-2 ml-2">Add to Cart</button></li>
+                            </ul>
+                        ))}
                     </div>
                 </div>
             ) : <Shimmer />}
