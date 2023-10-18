@@ -4,11 +4,14 @@ import { useParams } from "react-router-dom";
 import { fetchUrlData } from "../utils/fetchUrlData";
 import Shimmer from "./Shimmer";
 import { FETCH_RESTAURANT_DETAILS_URL } from "../constants/constants";
+import { useDispatch } from "react-redux";
+import { addItem } from "../store/cartSlice"
 
 function RestaurantCardDetails() {
     const [details, setDetails] = useState(null);
     const [menuItems, setMenuItems] = useState(null);
     const { id } = useParams();
+    const dispatch = useDispatch();
 
     useEffect(() => {
         getRestaurantCardDetails();
@@ -21,6 +24,10 @@ function RestaurantCardDetails() {
         setDetails(data);
         const menuItems = response?.data?.cards[2]?.groupedCard?.cardGroupMap?.REGULAR?.cards[2]?.card?.card?.itemCards
         setMenuItems(menuItems)
+    }
+
+    const handleAddItem = (item) => {
+        dispatch(addItem(item?.card?.info));
     }
 
     return (
@@ -45,7 +52,7 @@ function RestaurantCardDetails() {
                         <p className="pt-5 tex-base">Menu Items:   👇</p>
                         {menuItems?.map((item, index) => (
                             <ul className="text-red-400 pt-2" key={index}>
-                                <li> 🍕 {item?.card?.info?.name} <button className="border bg-green-400 text-white rounded p-2 ml-2">Add to Cart</button></li>
+                                <li> 🍕 {item?.card?.info?.name} <button className="border bg-green-400 text-white rounded p-2 ml-2" onClick={() => handleAddItem(item)}>Add to Cart</button></li>
                             </ul>
                         ))}
                     </div>
