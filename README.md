@@ -49,5 +49,41 @@ Component has two phase:
 
 
 <!-- 
-If the child component is doin async call then the parent componentDidMount lifecycle get triggered befor child componentDidMount
+If the child component is doing async call then the parent componentDidMount lifecycle get triggered befor child componentDidMount
  -->
+
+
+<!-- <
+Types of testing:
+-Manual testing
+-Automation testing
+   --testing using selenium
+
+-E2E testing - cover intire user journey
+ 
+-Unit testing
+
+-Integration testing
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+How to test app in react
+-intstal react-testing-library/react
+-Install jset
+-configure jest
+-install jest-enviroment-jsdom
+-create first test case using test("",()=> expect(fun()).toBe())
+-configure babel
+
+> -->
